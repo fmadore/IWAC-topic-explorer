@@ -1,67 +1,231 @@
-# SvelteKit + shadcn-svelte Starter
+# IWAC Topic Explorer (SvelteKit + Tailwind 4 + shadcn-svelte)
 
-This app is configured for Tailwind + shadcn-svelte and deploys to GitHub Pages using static adapter.
+A fully static, client-side topic-exploration UI for the Islam West Africa Collection (IWAC).
+Built with SvelteKit (Svelte 5), Tailwind CSS v4, shadcn-svelte UI parts, and LayerChart for charts.
+Deployed to GitHub Pages via the static adapter—no server required.
 
-## Setup
-
-1. Install deps
-
-```pwsh
+Demo (local)
 npm i
+npm run dev
+# open http://localhost:5173
+
+Features
+
+Search & filter topics (by label / id, min count)
+
+Per-topic dashboards: counts by country and over time (month)
+
+Document table with links (title, outlet, country, topic probability, sentiment/polarity if present)
+
+Dark/light theming via CSS variables mapped to Tailwind tokens
+
+100% static hosting: data are JSON files under static/data/
+
+# IWAC Topic Explorer (SvelteKit + Tailwind 4 + shadcn-svelte)
+
+A fully static, client-side topic-exploration UI for the Islam West Africa Collection (IWAC).
+Built with SvelteKit (Svelte 5), Tailwind CSS v4, shadcn-svelte UI parts, and LayerChart for charts.
+Deployed to GitHub Pages via the static adapter — no server required.
+
+## Demo (local)
+
+Install dependencies and start the dev server:
+
+```bash
+npm install
+npm run dev
+# then open http://localhost:5173
 ```
 
-2. Dev
+## Features
 
-```pwsh
-npm run dev -- --open
+- Search & filter topics (by label / id, min count)
+- Per-topic dashboards: counts by country and over time (month)
+- Document table with links (title, outlet, country, topic probability, sentiment/polarity if present)
+- Dark/light theming via CSS variables mapped to Tailwind tokens
+- 100% static hosting: data are JSON files under `static/data/`
+
+## Tech stack
+
+- SvelteKit 2 / Svelte 5 with `@sveltejs/adapter-static`
+- Tailwind CSS v4 (via `@tailwindcss/vite`)
+- shadcn-svelte primitives (Button, Card, Input, Label, Table, Tooltip)
+- LayerChart + `d3-scale` for charts
+- Prettier + `prettier-plugin-svelte`
+
+## Data model (static JSON)
+
+The UI loads JSON from `static/data/`. Two kinds of files are expected.
+
+`summary.json` (example):
+
+```json
+{
+  "total_docs": 12345,
+  "unique_topics": 200,
+  "topics": [
+    { "id": 12, "label": "Religious associations on campus", "count": 321 },
+    { "id": 7,  "label": "Mosque construction",               "count": 275 }
+  ],
+  "ai_fields": ["gemini_polarite"]
+}
 ```
 
-3. Build (outputs to `docs/` for GitHub Pages)
+`topics/{id}.json` (example):
 
-```pwsh
-$env:BASE_PATH = "/IWAC-topic-explorer" # set to repo name; blank for root
-npm run build
+```json
+{
+  "id": 12,
+  "label": "Religious associations on campus",
+  "count": 321,
+  "avg_prob": 0.42,
+  "counts_by_country": { "Benin": 88, "Togo": 70, "Côte d'Ivoire": 95, "Burkina Faso": 68 },
+  "counts_by_month": { "1978-03": 2, "1978-04": 3 },
+  "ai_fields": ["gemini_polarite"],
+  "docs": [
+    {
+      "topic_id": 12,
+      "topic_prob": 0.77,
+      "topic_label": "Religious associations on campus",
+      "pub_date": "1979-05-14",
+      "date": "1979-05-14",
+      "country": "Togo",
+      "newspaper": "Togo-Presse",
+      "title": "Associations étudiantes et religion",
+      "url": "https://...",
+      "sentiment_label": "neutral",
+      "sentiment_score": 0.51,
+      "gemini_polarite": "neutre"
+    }
+  ]
+}
 ```
 
-4. Enable GitHub Pages in repo settings to serve from `docs/`.
+The UI is tolerant of missing fields. Dates are aggregated by `YYYY-MM`.
 
-## Add shadcn-svelte components
+## Building the static data
 
-Install the CLI and generate components:
+A helper script prepares compact JSON directly from a Hugging Face dataset and writes into `sveltekit-app/static/data/` by default.
 
-```pwsh
-# one-time
-npm i -D shadcn-svelte
+1. Install Python deps (recommended: create and activate a venv):
 
-# e.g., add Button component
-npx shadcn-svelte add button
+```bash
+python -m venv .venv
+# macOS / Linux
+source .venv/bin/activate
+# Windows PowerShell
+.\.venv\Scripts\Activate.ps1
+pip install -r sveltekit-app/static/data/requirements.txt
 ```
 
-See https://www.shadcn-svelte.com/docs/installation/sveltekit
+2. Authenticate with Hugging Face (if private / rate limited):
 
-# IWAC SvelteKit (Svelte 5 + Tailwind 4 + shadcn-svelte)
+PowerShell:
 
-This app exposes a Topic Explorer dashboard at `/explorer/` using shadcn-svelte components and Chart.js.
+```powershell
+$env:HF_TOKEN = "hf_..."
+```
 
-## Dev
+3. Run the exporter (example):
 
-```pwsh
-cd sveltekit-app
-npm i
+```bash
+python sveltekit-app/static/data/build_topic_explorer_data.py \
+  --repo fmadore/islam-west-africa-collection \
+  --config-name articles \
+  --out-dir sveltekit-app/static/data \
+  --per-topic-docs 200 \
+  --topic-min-count 5
+```
+
+Key options:
+
+- `--repo`: HF dataset repo id
+- `--config-name`: `articles` or `publications`
+- `--out-dir`: where `summary.json` and `topics/*.json` are written
+- `--max-docs`: quick sampling for tests
+- `--per-topic-docs`: cap document rows per topic
+- `--topic-min-count`: drop very small topics from the summary
+
+## Project layout
+
+```
+sveltekit-app/
+  src/
+    routes/+page.svelte
+    routes/+layout.{svelte,ts}
+    lib/components/ui/
+    lib/components/ui/chart/
+    app.css
+    app.html
+  static/
+    data/
+      summary.json
+      topics/{id}.json
+      build_topic_explorer_data.py
+      requirements.txt
+  svelte.config.js
+  vite.config.ts
+  package.json
+```
+
+## Local development
+
+```bash
+npm install
 npm run dev
 ```
 
-For dev, ensure the dataset exists at `../topic-explorer/data`.
+The explorer is available at the root route (`/`). Ensure `static/data/summary.json` and `static/data/topics/*.json` exist.
 
-## Build for GitHub Pages
+## Build & deploy (GitHub Pages)
 
-```pwsh
-cd sveltekit-app
-$env:BASE_PATH = '/IWAC-topic-explorer'
+The static adapter emits into `docs/`. Set `BASE_PATH` before building when deploying under a repo subpath.
+
+Bash example:
+
+```bash
+export BASE_PATH="/IWAC-topic-explorer"
 npm run build
 ```
 
-Build output goes to `docs/`. The `postbuild` script copies `../topic-explorer/data/**` into `docs/topic-explorer/data/` so the explorer can fetch JSON at the same base.
+PowerShell example:
 
-## Deploy
-Push `docs/` to the `gh-pages` (or default) branch with GitHub Pages enabled. The site will be available at `https://<user>.github.io/IWAC-topic-explorer/`.
+```powershell
+$env:BASE_PATH = "/IWAC-topic-explorer"
+npm run build
+```
+
+Output: `docs/` (both pages and assets). In GitHub Pages settings use the `docs/` folder of your default branch.
+
+If deploying to a repository subpath, the site URL will be:
+
+```
+https://<user>.github.io/IWAC-topic-explorer/
+```
+
+Tip: If you see a blank page or missing assets, the base path is likely wrong. For root domains (e.g., `username.github.io`) build with `BASE_PATH=""`.
+
+## Theming & UI notes
+
+- Colors and chart palettes are defined as CSS custom properties in `src/app.css` and mapped to Tailwind tokens.
+- Dark mode is applied by toggling the `.dark` class on `<html>` or `<body>`.
+- Components come from shadcn-svelte; chart wrappers live under `lib/components/ui/chart/`.
+
+## Scripts (package.json)
+
+- `npm run dev` — start Vite dev server
+- `npm run build` — build to `docs/` (respects `BASE_PATH`)
+- `npm run preview` — preview production build
+- `npm run check` — `svelte-check` (TypeScript)
+- `npm run format` / `npm run lint` — Prettier
+- `npm run deploy` — convenience PowerShell wrapper that sets `BASE_PATH` then builds
+
+## Troubleshooting
+
+- Blank UI / 404s on assets: set `BASE_PATH` to your repo name (e.g., `/IWAC-topic-explorer`) before `npm run build`.
+- No topics displayed: ensure `static/data/summary.json` exists and topic counts meet the min-count filter.
+- Dates not aggregating: the exporter normalizes `pub_date`/`date` to `YYYY-MM`; verify your dataset has parsable values.
+
+---
+
+README formatted and structured for readability.
