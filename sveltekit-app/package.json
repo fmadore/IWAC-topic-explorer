@@ -1,0 +1,44 @@
+{
+  "name": "iwac-sveltekit",
+  "version": "0.0.1",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite dev",
+    "build": "vite build",
+    "preview": "vite preview",
+    "check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
+    "format": "prettier --write .",
+    "lint": "prettier --check .",
+    "postbuild": "pwsh -NoProfile -Command \"Write-Host 'Postbuild: static assets already copied by SvelteKit'\"",
+    "deploy": "powershell -NoProfile -Command \"$env:BASE_PATH='/IWAC-topic-explorer'; npm run build\""
+  },
+  "devDependencies": {
+    "@internationalized/date": "^3.9.0",
+    "@lucide/svelte": "^0.542.0",
+    "@sveltejs/adapter-static": "3.0.4",
+    "@sveltejs/kit": "2.5.26",
+    "@tailwindcss/vite": "^4.1.12",
+    "bits-ui": "^2.9.4",
+    "layerchart": "^2.0.0-next.27",
+    "postcss": "^8.4.47",
+    "prettier": "^3.3.3",
+    "prettier-plugin-svelte": "^3.2.6",
+    "svelte": "^5.0.0",
+    "svelte-check": "^4.0.5",
+    "tailwind-merge": "^3.3.1",
+    "tailwind-variants": "^1.0.0",
+    "tailwindcss": "^4.1.12",
+    "tailwindcss-animate": "^1.0.7",
+    "tslib": "^2.8.0",
+    "tw-animate-css": "^1.3.7",
+    "typescript": "^5.6.2",
+    "vite": "^5.4.6"
+  },
+  "dependencies": {
+    "clsx": "^2.1.1",
+    "csstype": "^3.1.3",
+    "d3-scale": "^4.0.2",
+    "lucide-svelte": "^0.468.0"
+  }
+}

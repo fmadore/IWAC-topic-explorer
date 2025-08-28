@@ -1,0 +1,1 @@
+<div class="shrink-0 bg-border" style="height:1px;width:100%"></div>

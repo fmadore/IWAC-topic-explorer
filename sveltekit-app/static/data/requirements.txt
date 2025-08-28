@@ -1,0 +1,5 @@
+# Dependencies for build_topic_explorer_data.py
+pandas>=2.2
+datasets>=2.20
+huggingface_hub>=0.24
+pyarrow>=14
