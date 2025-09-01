@@ -1,175 +1,160 @@
 {
-  "total_docs": 10629,
-  "unique_topics": 105,
+  "total_docs": 11664,
+  "unique_topics": 98,
   "topics": [
     {
       "id": -1,
       "label": "Outlier",
-      "count": 5825
+      "count": 6462
     },
     {
       "id": 0,
-      "label": "0_ivoire_côte_côte ivoire_ivoirien",
-      "count": 392
+      "label": "0_pèlerin_pèlerinage_hadj_mecque",
+      "count": 1027
     },
     {
       "id": 1,
-      "label": "1_école_séminaire_formation_élève",
-      "count": 356
-    },
-    {
-      "id": 2,
-      "label": "2_jeûne_mois_ramadan_jeûner",
-      "count": 349
+      "label": "1_jeûne_mois_ramadan_jeûner",
+      "count": 386
     },
     {
       "id": 3,
       "label": "3_mosquée_inauguration_construction_vendredi",
-      "count": 310
+      "count": 308
     },
     {
-      "id": 4,
-      "label": "4_prophète_mouloud_naissance_naissance prophète",
-      "count": 252
+      "id": 2,
+      "label": "2_séminaire_école_formation_élève",
+      "count": 270
     },
     {
       "id": 5,
-      "label": "5_togolais_togo_pasteur_office",
-      "count": 200
+      "label": "5_prophète_mouloud_naissance_naissance prophète",
+      "count": 224
+    },
+    {
+      "id": 4,
+      "label": "4_prière_ramadan_fidèle_fitr",
+      "count": 217
     },
     {
       "id": 6,
-      "label": "6_terroriste_attaque_force_groupe",
-      "count": 154
-    },
-    {
-      "id": 7,
-      "label": "7_togolais_libyen_togo_eyadéma",
-      "count": 149
+      "label": "6_sacrifice_mouton_fête_tabaski",
+      "count": 156
     },
     {
       "id": 8,
-      "label": "8_togo_togolais_prière_allah",
-      "count": 119
+      "label": "8_libyen_togolais_togo_eyadéma",
+      "count": 134
     },
     {
-      "id": 11,
-      "label": "11_pèlerin_béninois_pèlerin béninois_hadj",
-      "count": 92
-    },
-    {
-      "id": 12,
-      "label": "12_libyen_populaire_arabe libyen_kadhafi",
-      "count": 83
-    },
-    {
-      "id": 17,
-      "label": "17_prière_fitr_fidèle_ramadan",
-      "count": 82
+      "id": 7,
+      "label": "7_terroriste_attaque_force_armée",
+      "count": 124
     },
     {
       "id": 9,
-      "label": "9_niger_coopération_république_niamey",
-      "count": 79
-    },
-    {
-      "id": 10,
-      "label": "10_mouton_marché_bétail_vendeur",
-      "count": 79
-    },
-    {
-      "id": 19,
-      "label": "19_concours_coran_mémorisation_saint coran",
-      "count": 73
-    },
-    {
-      "id": 23,
-      "label": "23_femme_femme musulman_féminin_cellule",
-      "count": 67
-    },
-    {
-      "id": 13,
-      "label": "13_bénin_projet_fonds_bid",
-      "count": 62
+      "label": "9_bénin_banque_bid_financement",
+      "count": 104
     },
     {
       "id": 16,
-      "label": "16_pèlerinage_pèlerin_mecque_arafat",
-      "count": 62
-    },
-    {
-      "id": 21,
-      "label": "21_bénin_confession_confession religieux_religieux",
-      "count": 61
-    },
-    {
-      "id": 14,
-      "label": "14_ramadan_prière_jeûne_place idi",
-      "count": 60
+      "label": "16_nuit_nuit destin_destin_mois",
+      "count": 97
     },
     {
       "id": 15,
-      "label": "15_sacrifice_tabaski_fête_mouton",
-      "count": 59
+      "label": "15_libyen_populaire_kadhafi_arabe libyen",
+      "count": 94
     },
     {
-      "id": 18,
-      "label": "18_sunnite_mosquée_mouvement sunnite_mouvement",
-      "count": 58
+      "id": 14,
+      "label": "14_mouton_marché_prix_vendeur",
+      "count": 93
+    },
+    {
+      "id": 13,
+      "label": "13_togo_togolais_prière_allah",
+      "count": 91
+    },
+    {
+      "id": 12,
+      "label": "12_niger_coopération_nigérien_république",
+      "count": 83
+    },
+    {
+      "id": 10,
+      "label": "10_togolais_togo_pasteur_dieu",
+      "count": 82
+    },
+    {
+      "id": 17,
+      "label": "17_concours_coran_mémorisation_saint coran",
+      "count": 78
+    },
+    {
+      "id": 11,
+      "label": "11_côte_ivoire_côte ivoire_ivoirien",
+      "count": 66
     },
     {
       "id": 20,
-      "label": "20_dieu_religion_prophète_liberté",
-      "count": 57
+      "label": "20_femme_femme musulman_féminin_cellule",
+      "count": 61
     },
     {
-      "id": 25,
-      "label": "25_sucre_prix_produit_vendre",
-      "count": 51
+      "id": 21,
+      "label": "21_bénin_confession_religieux_confession religieux",
+      "count": 61
     },
     {
-      "id": 27,
-      "label": "27_mendicité_mendiant_mariage_mendier",
-      "count": 50
+      "id": 18,
+      "label": "18_mesure_mosquée_lieu culte_culte",
+      "count": 58
     },
     {
-      "id": 26,
-      "label": "26_médical_ahmadiyya_at_humanity first",
-      "count": 46
-    },
-    {
-      "id": 28,
-      "label": "28_sida_planification familial_familial_planification",
-      "count": 43
+      "id": 19,
+      "label": "19_sunnite_mosquée_mouvement sunnite_mouvement",
+      "count": 56
     },
     {
       "id": 22,
-      "label": "22_voyage_agence_pèlerin_comité",
+      "label": "22_sucre_prix_produit_marché",
+      "count": 51
+    },
+    {
+      "id": 25,
+      "label": "25_sida_planification familial_familial_planification",
+      "count": 48
+    },
+    {
+      "id": 26,
+      "label": "26_médical_ahmadiyya_humanity first_humanity",
+      "count": 46
+    },
+    {
+      "id": 23,
+      "label": "23_don_sucre_carton_sac",
+      "count": 43
+    },
+    {
+      "id": 28,
+      "label": "28_tabaski_prière_fête_lomé",
       "count": 40
     },
     {
-      "id": 29,
-      "label": "29_don_sucre_sac_carton",
-      "count": 38
-    },
-    {
-      "id": 24,
-      "label": "24_ablassé_politique_kanazoé_jeune",
-      "count": 35
-    },
-    {
-      "id": 38,
-      "label": "38_pèlerin_vol_pèlerin burkinabè_burkinabè",
-      "count": 35
-    },
-    {
       "id": 30,
-      "label": "30_ahmadiyya_islamique ahmadiyya_at_at islamique",
-      "count": 34
+      "label": "30_kit_alimentaire_bénéficiaire_riz",
+      "count": 37
     },
     {
       "id": 33,
-      "label": "33_nuit_destin_nuit destin_mois",
+      "label": "33_mendicité_mendiant_mendier_enfant",
+      "count": 35
+    },
+    {
+      "id": 27,
+      "label": "27_fête_tabaski_aïd_aïd el",
       "count": 34
     },
     {
@@ -178,339 +163,329 @@
       "count": 32
     },
     {
-      "id": 41,
-      "label": "41_pèlerin_pèlerin ivoirien_ivoirien_air",
-      "count": 32
-    },
-    {
-      "id": 34,
-      "label": "34_waqf_finance_finance islamique_niger",
-      "count": 30
-    },
-    {
-      "id": 31,
-      "label": "31_tabaski_lomé_fête_togo",
+      "id": 24,
+      "label": "24_dieu_islam_religion_intégrisme",
       "count": 29
-    },
-    {
-      "id": 32,
-      "label": "32_niger_nigérien_sahel_français",
-      "count": 29
-    },
-    {
-      "id": 39,
-      "label": "39_arabie saoudite_saoudite_arabie_faso",
-      "count": 28
-    },
-    {
-      "id": 40,
-      "label": "40_allah_dieu_repentir_croyant",
-      "count": 28
-    },
-    {
-      "id": 47,
-      "label": "47_pèlerin_vague_togolais_hadj",
-      "count": 27
-    },
-    {
-      "id": 51,
-      "label": "51_défunt_niger_niamey_hama",
-      "count": 26
-    },
-    {
-      "id": 44,
-      "label": "44_présidium_observation_commission_fédération association",
-      "count": 25
-    },
-    {
-      "id": 48,
-      "label": "48_korhogo_coulibaly_défunt_dépouille",
-      "count": 24
-    },
-    {
-      "id": 36,
-      "label": "36_pèlerin_vol_aéroport_bobo",
-      "count": 23
-    },
-    {
-      "id": 52,
-      "label": "52_ahmadiyya_at_at islamique_islamique ahmadiyya",
-      "count": 23
-    },
-    {
-      "id": 46,
-      "label": "46_mesure_lieu culte_culte_mosquée",
-      "count": 22
-    },
-    {
-      "id": 59,
-      "label": "59_boeuf_ong_turc_tabaski",
-      "count": 21
     },
     {
       "id": 35,
-      "label": "35_kit_ong_bénéficiaire_alimentaire",
-      "count": 20
+      "label": "35_waqf_finance_finance islamique_niger",
+      "count": 28
+    },
+    {
+      "id": 32,
+      "label": "32_faib_fédération_adjoint_association islamique",
+      "count": 27
+    },
+    {
+      "id": 36,
+      "label": "36_arabie saoudite_arabie_saoudite_bassolé",
+      "count": 26
+    },
+    {
+      "id": 38,
+      "label": "38_coulibaly_korhogo_défunt_état",
+      "count": 26
+    },
+    {
+      "id": 39,
+      "label": "39_présidium_observation_commission_fédération association",
+      "count": 26
+    },
+    {
+      "id": 43,
+      "label": "43_défunt_niger_niamey_hama",
+      "count": 26
+    },
+    {
+      "id": 31,
+      "label": "31_ablassé_ablassé ouédraogo_atout_politique",
+      "count": 24
+    },
+    {
+      "id": 29,
+      "label": "29_dori_ufc_sahel_cohésion social",
+      "count": 22
     },
     {
       "id": 45,
-      "label": "45_dori_ufc_sahel_région sahel",
-      "count": 20
+      "label": "45_boeuf_ong_tabaski_turc",
+      "count": 22
     },
     {
-      "id": 56,
-      "label": "56_nuit_cerfi_nuit destin_destin",
-      "count": 20
-    },
-    {
-      "id": 58,
-      "label": "58_dialogue_commission_épiscopal_chrétien",
-      "count": 20
-    },
-    {
-      "id": 65,
-      "label": "65_sénat_position_fédération_président faso",
-      "count": 20
-    },
-    {
-      "id": 49,
-      "label": "49_sahel_république_chef etat_sem",
-      "count": 19
+      "id": 47,
+      "label": "47_financement_banque_finance_finance islamique",
+      "count": 22
     },
     {
       "id": 53,
-      "label": "53_femme_voile_droit_femme musulman",
+      "label": "53_sénat_position_fédération_mise place",
+      "count": 22
+    },
+    {
+      "id": 41,
+      "label": "41_mouton_sacrifice_prix_tabaski",
+      "count": 20
+    },
+    {
+      "id": 46,
+      "label": "46_noël_chrétien_niger_niamey",
+      "count": 20
+    },
+    {
+      "id": 54,
+      "label": "54_congrès_congrès mondial_mondial_mondial islamique",
       "count": 19
     },
     {
-      "id": 55,
-      "label": "55_pèlerin_ivoirien_pèlerin ivoirien_pèlerinage",
+      "id": 56,
+      "label": "56_agadez_aïr_sultan_gouverneur",
       "count": 19
     },
     {
       "id": 57,
-      "label": "57_oci_zakat_burkina_sommet",
+      "label": "57_excision_pratique_pratique excision_abandon",
       "count": 19
     },
     {
-      "id": 63,
-      "label": "63_excision_pratique_pratique excision_femme",
+      "id": 60,
+      "label": "60_campagne_opération_patient_opérer",
       "count": 19
     },
     {
-      "id": 50,
-      "label": "50_religieux_projet loi_observatoire_burkina",
+      "id": 40,
+      "label": "40_religieux_liberté_burkina_observatoire",
       "count": 18
-    },
-    {
-      "id": 54,
-      "label": "54_bénin_talon_béninois_politique",
-      "count": 18
-    },
-    {
-      "id": 64,
-      "label": "64_noël_chrétien_niamey_archevêque",
-      "count": 18
-    },
-    {
-      "id": 66,
-      "label": "66_agadez_aïr_sultan_gouverneur",
-      "count": 18
-    },
-    {
-      "id": 71,
-      "label": "71_campagne_opération_patient_médecin",
-      "count": 17
-    },
-    {
-      "id": 72,
-      "label": "72_the_of_to_and",
-      "count": 17
     },
     {
       "id": 42,
-      "label": "42_fête_sokodé_prière_préfet",
+      "label": "42_allah_dieu_repentir_croyant",
+      "count": 18
+    },
+    {
+      "id": 44,
+      "label": "44_niger_nigérien_français_cedeao",
+      "count": 18
+    },
+    {
+      "id": 59,
+      "label": "59_chômer_férié_fonction public_payer",
+      "count": 18
+    },
+    {
+      "id": 34,
+      "label": "34_cni_koudouss_conseil_national islamique",
+      "count": 17
+    },
+    {
+      "id": 49,
+      "label": "49_ahmadiyya_at_prison_at islamique",
+      "count": 17
+    },
+    {
+      "id": 50,
+      "label": "50_dialogue_commission_épiscopal_chrétien",
       "count": 16
     },
     {
-      "id": 73,
-      "label": "73_riz_producteur_agriculture_dosso",
-      "count": 16
+      "id": 52,
+      "label": "52_sokodé_fête_prière_préfet",
+      "count": 15
+    },
+    {
+      "id": 55,
+      "label": "55_femme_voile_droit_islam",
+      "count": 15
     },
     {
       "id": 61,
-      "label": "61_orphelin_kpalimé_ong_centre",
+      "label": "61_danse_traditionnel_canton_tchaoudjo",
       "count": 15
     },
     {
-      "id": 68,
-      "label": "68_chômer_férié_fonction public_payer",
+      "id": 63,
+      "label": "63_riz_producteur_dosso_agriculture",
       "count": 15
     },
     {
-      "id": 70,
-      "label": "70_union islamique_islamique bénin_congrès_union",
-      "count": 15
+      "id": 58,
+      "label": "58_ahmadiyya_islamique ahmadiyya_at_annuel",
+      "count": 14
     },
     {
-      "id": 74,
-      "label": "74_mle_échelon_monsieur_nommer",
-      "count": 15
+      "id": 66,
+      "label": "66_mle_échelon nommer_échelon_classe échelon",
+      "count": 14
     },
     {
-      "id": 82,
-      "label": "82_uib_bureau_union islamique_coordonnateur",
-      "count": 15
-    },
-    {
-      "id": 43,
-      "label": "43_sèmè_religion_temple_sénat",
+      "id": 69,
+      "label": "69_djibo_soum_assassinat_cissé",
       "count": 14
     },
     {
       "id": 67,
-      "label": "67_finance_financement_finance islamique_banque",
-      "count": 14
-    },
-    {
-      "id": 75,
-      "label": "75_ouagadougou_tabaski_fête_place nation",
-      "count": 14
-    },
-    {
-      "id": 80,
-      "label": "80_espace public_espace_public_préfet",
-      "count": 14
-    },
-    {
-      "id": 81,
-      "label": "81_djibo_soum_assassinat_cissé",
-      "count": 14
-    },
-    {
-      "id": 60,
-      "label": "60_fête_bon fête_burkina_faso",
+      "label": "67_cni_koudouss_idriss_cosim",
       "count": 13
     },
     {
-      "id": 69,
-      "label": "69_faib_pouytenga_association_adjoint",
+      "id": 74,
+      "label": "74_bureau_cerfi_congrès_union",
       "count": 13
     },
     {
       "id": 77,
-      "label": "77_caricature_journal_liberté expression_liberté",
+      "label": "77_france_islamiste_algérien_transition",
       "count": 13
     },
     {
-      "id": 84,
-      "label": "84_danse_tchaoudjo_traditionnel_canton",
-      "count": 13
-    },
-    {
-      "id": 89,
-      "label": "89_datte_royaume_royaume arabie_saoudite",
-      "count": 13
-    },
-    {
-      "id": 93,
-      "label": "93_rue_musée_ouédraogo_el hadj",
-      "count": 13
-    },
-    {
-      "id": 62,
-      "label": "62_pouytenga_sécurité_tenue_faib",
+      "id": 51,
+      "label": "51_sahel_sem_chef etat_etat",
       "count": 12
-    },
-    {
-      "id": 87,
-      "label": "87_site_hébergement_bâtiment_akpakpa",
-      "count": 12
-    },
-    {
-      "id": 91,
-      "label": "91_radicalisation_violent_extrémisme violent_extrémisme",
-      "count": 12
-    },
-    {
-      "id": 95,
-      "label": "95_fcfa_contribution_fonds_somme",
-      "count": 12
-    },
-    {
-      "id": 86,
-      "label": "86_sana_cmbf_congrès_bureau",
-      "count": 11
-    },
-    {
-      "id": 92,
-      "label": "92_santé_santé public_ministre santé_public",
-      "count": 11
-    },
-    {
-      "id": 94,
-      "label": "94_faib_fédération_islamique burkina_faso",
-      "count": 11
-    },
-    {
-      "id": 100,
-      "label": "100_france_islamiste_algérien_transition",
-      "count": 11
-    },
-    {
-      "id": 79,
-      "label": "79_pèlerin_hadj_pèlerinage_côte",
-      "count": 10
-    },
-    {
-      "id": 99,
-      "label": "99_patriote_carton_rédaction_don",
-      "count": 10
     },
     {
       "id": 78,
-      "label": "78_tenkodogo_prière_imam_fête",
-      "count": 9
+      "label": "78_radicalisation_violent_extrémisme violent_extrémisme",
+      "count": 12
     },
     {
-      "id": 98,
-      "label": "98_charte_parlementaire_organisation coopération_coopération islamique",
-      "count": 9
+      "id": 83,
+      "label": "83_uib_union islamique_bureau_union",
+      "count": 12
     },
     {
-      "id": 97,
-      "label": "97_ceni_électoral_siège_commissaire",
-      "count": 8
-    },
-    {
-      "id": 103,
-      "label": "103_voeu_nigérien_niger_bon fête",
-      "count": 8
+      "id": 84,
+      "label": "84_fcfa_contribution_fonds_somme",
+      "count": 12
     },
     {
       "id": 85,
-      "label": "85_pèlerin_pèlerinage_agence_mecque",
+      "label": "85_niger_nigérien_bon fête_voeu",
+      "count": 12
+    },
+    {
+      "id": 75,
+      "label": "75_talon_bénin_politique_parti",
+      "count": 11
+    },
+    {
+      "id": 80,
+      "label": "80_radio_bayane_djiguiba_cissé djiguiba",
+      "count": 11
+    },
+    {
+      "id": 81,
+      "label": "81_sana_cmbf_congrès_bureau",
+      "count": 11
+    },
+    {
+      "id": 91,
+      "label": "91_pouytenga_sécurité_faib_tenue",
+      "count": 11
+    },
+    {
+      "id": 65,
+      "label": "65_secte_sèmè_religion_sénat",
+      "count": 10
+    },
+    {
+      "id": 70,
+      "label": "70_voie_rédaction_sucre_don",
+      "count": 10
+    },
+    {
+      "id": 71,
+      "label": "71_caricature_journal_liberté expression_liberté",
+      "count": 10
+    },
+    {
+      "id": 72,
+      "label": "72_santé_santé public_ministre santé_public",
+      "count": 10
+    },
+    {
+      "id": 73,
+      "label": "73_datte_royaume_royaume arabie_saoudite",
+      "count": 10
+    },
+    {
+      "id": 90,
+      "label": "90_mariage_couple_divorce_tissu",
+      "count": 10
+    },
+    {
+      "id": 93,
+      "label": "93_client_habit_fête_atelier",
+      "count": 10
+    },
+    {
+      "id": 94,
+      "label": "94_uib_lavage_coronavirus_mesure",
+      "count": 10
+    },
+    {
+      "id": 64,
+      "label": "64_cni_koudouss_idriss_idriss koudouss",
+      "count": 9
+    },
+    {
+      "id": 76,
+      "label": "76_at islamique_at_interreligieux_monsieur",
+      "count": 9
+    },
+    {
+      "id": 89,
+      "label": "89_coranique_foyer coranique_foyer_éducation",
+      "count": 9
+    },
+    {
+      "id": 95,
+      "label": "95_boigny_houphouët_houphouët boigny_chef état",
+      "count": 9
+    },
+    {
+      "id": 48,
+      "label": "48_côte ivoire_ivoire_côte_ivoirien",
+      "count": 8
+    },
+    {
+      "id": 87,
+      "label": "87_bazoum_diffa_population_force",
+      "count": 8
+    },
+    {
+      "id": 92,
+      "label": "92_islamique bénin_union islamique_congrès_bénin",
+      "count": 8
+    },
+    {
+      "id": 68,
+      "label": "68_djougou_prière_préfet_parakou",
+      "count": 7
+    },
+    {
+      "id": 79,
+      "label": "79_orphelin_kpalimé_ong_atop",
+      "count": 7
+    },
+    {
+      "id": 82,
+      "label": "82_village_école_fleuve_eau",
       "count": 7
     },
     {
       "id": 96,
-      "label": "96_client_marché_habit_fête",
+      "label": "96_gnassingbé_père nation_kara_eyadèma",
       "count": 7
     },
     {
+      "id": 62,
+      "label": "62_jeune_religion_église_jeunesse",
+      "count": 6
+    },
+    {
       "id": 88,
-      "label": "88_prière_djougou_allah_abomey calavi",
-      "count": 6
-    },
-    {
-      "id": 90,
-      "label": "90_mouton_prix_sacrifice_tabaski",
-      "count": 6
-    },
-    {
-      "id": 101,
-      "label": "101_pèlerin_hadj_pèlerinage_ministère",
-      "count": 6
+      "label": "88_ivoire_côte ivoire_bouaké_côte",
+      "count": 5
     }
   ],
   "ai_fields": [
