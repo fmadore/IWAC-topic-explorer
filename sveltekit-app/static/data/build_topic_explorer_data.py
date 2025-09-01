@@ -12,6 +12,7 @@ only the fields the static UI needs. No server or DB required.
 import argparse
 import json
 import os
+import re
 from collections import Counter, defaultdict
 from datetime import datetime
 from pathlib import Path
@@ -40,6 +41,36 @@ def month_key(date_str: str) -> str:
 
 def safe_str(x: Any) -> str:
     return "" if x is None else str(x)
+
+
+def clean_topic_label(label: str) -> str:
+    """
+    Clean topic labels by:
+    1. Removing topic ID prefix (e.g., "91_" from "91_pouytenga_sécurité_faib_tenue")
+    2. Replacing underscores with spaces
+    3. Capitalizing first letter of each word
+    4. Handling special characters properly
+    """
+    if not label:
+        return label
+    
+    # Remove leading topic ID number and underscore (e.g., "91_" or "1_")
+    import re
+    cleaned = re.sub(r'^\d+_', '', label)
+    
+    # Replace underscores with spaces
+    cleaned = cleaned.replace('_', ' ')
+    
+    # Split into words and capitalize each word, preserving accents
+    words = cleaned.split()
+    capitalized_words = []
+    for word in words:
+        if word:
+            # Capitalize first letter while preserving accents
+            capitalized_word = word[0].upper() + word[1:].lower() if len(word) > 1 else word.upper()
+            capitalized_words.append(capitalized_word)
+    
+    return ' '.join(capitalized_words)
 
 
 def main():
@@ -124,8 +155,10 @@ def main():
             continue
         # label: use mode of topic_label for this topic
         labels = df_docs.loc[df_docs["topic_id"] == tid, "topic_label"].dropna().astype(str)
-        label = labels.mode().iloc[0] if not labels.empty else f"Topic {tid}"
-        topics_summary.append({"id": int(tid), "label": label, "count": int(cnt)})
+        raw_label = labels.mode().iloc[0] if not labels.empty else f"Topic {tid}"
+        # Clean the topic label for better readability
+        clean_label = clean_topic_label(raw_label)
+        topics_summary.append({"id": int(tid), "label": clean_label, "count": int(cnt)})
 
     summary = {
         "total_docs": total_docs,
