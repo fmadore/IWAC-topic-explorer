@@ -43,42 +43,45 @@
       </CardTitle>
     </CardHeader>
     <CardContent>
-      <div class="overflow-auto">
+      <div class="overflow-x-auto">
         <Table.Root>
           <Table.Header class="bg-secondary/30">
             <Table.Row>
-              <Table.Head class="text-foreground/80 font-semibold">📅 Date</Table.Head>
-              <Table.Head class="text-foreground/80 font-semibold">📰 Title</Table.Head>
-              <Table.Head class="text-foreground/80 font-semibold">🏢 Newspaper</Table.Head>
-              <Table.Head class="text-foreground/80 font-semibold">🌍 Country</Table.Head>
-              <Table.Head class="text-foreground/80 font-semibold">📊 Prob</Table.Head>
-              <Table.Head class="text-foreground/80 font-semibold">🤖 AI Polarité</Table.Head>
+              <Table.Head class="text-foreground/80 font-semibold w-24 min-w-24">📅 Date</Table.Head>
+              <Table.Head class="text-foreground/80 font-semibold max-w-xs">📰 Title</Table.Head>
+              <Table.Head class="text-foreground/80 font-semibold w-32 min-w-32">🏢 Newspaper</Table.Head>
+              <Table.Head class="text-foreground/80 font-semibold w-20 min-w-20">🌍 Country</Table.Head>
+              <Table.Head class="text-foreground/80 font-semibold w-16 min-w-16">📊 Prob</Table.Head>
+              <Table.Head class="text-foreground/80 font-semibold w-24 min-w-24">🤖 AI Polarité</Table.Head>
             </Table.Row>
           </Table.Header>
           <Table.Body>
             {#each documents as d, index}
               <Table.Row class="hover:bg-accent/40 transition-colors">
-                <Table.Cell class="text-muted-foreground">
+                <Table.Cell class="text-muted-foreground text-xs whitespace-nowrap">
                   {d.date ?? d.pub_date ?? ''}
                 </Table.Cell>
-                <Table.Cell>
+                <Table.Cell class="max-w-xs">
                   {#if d.url || d.source_url || d['o:source']}
                     <a 
-                      class="text-primary hover:opacity-90 underline font-medium transition-opacity" 
+                      class="text-primary hover:opacity-90 underline font-medium transition-opacity block truncate" 
                       href={(d.url || d.source_url || d['o:source'])} 
                       target="_blank" 
                       rel="noopener"
+                      title={d.title || d.ocr_title || d['o:title'] || 'Untitled'}
                     >
                       {d.title || d.ocr_title || d['o:title'] || 'Untitled'}
                     </a>
                   {:else}
-                    <span class="font-medium">
+                    <span class="font-medium block truncate" title={d.title || d.ocr_title || d['o:title'] || 'Untitled'}>
                       {d.title || d.ocr_title || d['o:title'] || 'Untitled'}
                     </span>
                   {/if}
                 </Table.Cell>
-                <Table.Cell class="text-muted-foreground">
-                  {d.newspaper ?? d.source ?? ''}
+                <Table.Cell class="text-muted-foreground text-sm truncate">
+                  <span title={d.newspaper ?? d.source ?? ''}>
+                    {d.newspaper ?? d.source ?? ''}
+                  </span>
                 </Table.Cell>
                 <Table.Cell>
                   <span class="px-2 py-1 rounded-full text-xs font-medium bg-accent text-accent-foreground">
