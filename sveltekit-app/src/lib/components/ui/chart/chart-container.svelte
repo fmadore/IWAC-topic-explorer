@@ -33,7 +33,7 @@
 		data-chart={chartId}
 		data-slot="chart"
 		class={cn(
-			"flex aspect-video justify-center overflow-visible text-xs w-full",
+			"flex aspect-video justify-center text-xs w-full overflow-visible",
 			// Overrides
 			//
 			// Stroke around dots/marks when hovering
@@ -50,7 +50,6 @@
 
 			// We don't want the little tick lines between the axis labels and the chart, so we remove
 			// the stroke. The alternative is to manually disable `tickMarks` on the x/y axis of every
-			// chart.
 			"[&_.lc-axis-tick]:stroke-0",
 
 			// We don't want to display the rule on the x/y axis, as there is already going to be

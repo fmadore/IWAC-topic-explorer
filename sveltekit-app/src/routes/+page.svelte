@@ -72,21 +72,25 @@
   });
 </script>
 
-<main class="px-4 py-6 max-w-7xl mx-auto space-y-6">
+<main class="container mx-auto px-4 py-6 space-y-6 max-w-none">
   <Header {summary} />
 
-  <section class="grid grid-cols-1 md:grid-cols-[320px_1fr] gap-4">
-    <TopicSidebar 
-      topics={filtered}
-      {search}
-      {minCount}
-      {activeId}
-      onSearchChange={handleSearchChange}
-      onMinCountChange={handleMinCountChange}
-      onTopicSelect={selectTopic}
-    />
+  <section class="grid grid-cols-1 lg:grid-cols-[300px_1fr] gap-4 overflow-hidden">
+    <div class="min-w-0">
+      <TopicSidebar 
+        topics={filtered}
+        {search}
+        {minCount}
+        {activeId}
+        onSearchChange={handleSearchChange}
+        onMinCountChange={handleMinCountChange}
+        onTopicSelect={selectTopic}
+      />
+    </div>
 
-    <TopicDetail topic={active} />
+    <div class="min-w-0 overflow-hidden">
+      <TopicDetail topic={active} />
+    </div>
   </section>
 </main>
 

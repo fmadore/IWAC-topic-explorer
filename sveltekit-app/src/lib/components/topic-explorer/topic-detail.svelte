@@ -61,9 +61,13 @@
     </CardHeader>
     {#if topic}
       <CardContent>
-        <div class="grid md:grid-cols-2 gap-4">
-          <CountryChart data={countryData} />
-          <TimeChart data={monthData} />
+        <div class="grid grid-cols-1 xl:grid-cols-2 gap-4 overflow-hidden">
+          <div class="min-w-0 overflow-hidden">
+            <CountryChart data={countryData} />
+          </div>
+          <div class="min-w-0 overflow-hidden">
+            <TimeChart data={monthData} />
+          </div>
         </div>
       </CardContent>
     {/if}

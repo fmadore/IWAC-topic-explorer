@@ -49,17 +49,17 @@
   const formatMonth = (dt: Date) => `${dt.getUTCFullYear()}-${String(dt.getUTCMonth() + 1).padStart(2, '0')}`;
 </script>
 
-<div>
+<div class="w-full min-w-0">
   <Card class="h-full border-l-4 border-l-accent/70 shadow-sm">
     <CardHeader class="bg-card">
       <CardTitle class="text-base flex items-center gap-2 text-foreground/90">
         📈 Over Time
       </CardTitle>
     </CardHeader>
-    <CardContent>
+    <CardContent class="p-4">
       <Chart.Container
         config={timeConfig}
-        class="min-h-[260px] w-full [&_.lc-area-path]:fill-transparent [&_.lc-line]:stroke-2 [&_.lc-grid-x-rule]:stroke-border/40 [&_.lc-grid-y-rule]:stroke-border/40"
+        class="h-[240px] w-full [&_.lc-area-path]:fill-transparent [&_.lc-line]:stroke-2 [&_.lc-grid-x-rule]:stroke-border/40 [&_.lc-grid-y-rule]:stroke-border/40"
       >
         <LineChart 
       data={chartData}

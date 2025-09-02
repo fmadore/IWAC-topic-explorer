@@ -23,15 +23,15 @@
   const barFill = (d: { country: string }) => `var(--color-${keyFor(d.country)})`;
 </script>
 
-<div>
+<div class="w-full min-w-0">
   <Card class="h-full border-l-4 border-l-accent/70 shadow-sm">
     <CardHeader class="bg-card">
       <CardTitle class="text-base flex items-center gap-2 text-foreground/90">
         🌍 By Country
       </CardTitle>
     </CardHeader>
-    <CardContent>
-      <Chart.Container config={countryConfig} class="min-h-[240px] w-full">
+    <CardContent class="p-4">
+      <Chart.Container config={countryConfig} class="h-[240px] w-full">
         <BarChart 
           data={data}
           xScale={scaleBand().padding(0.25)}
