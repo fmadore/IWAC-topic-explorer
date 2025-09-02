@@ -78,8 +78,8 @@
             }
           }}
         >
-          {#snippet tooltip()}
-            <Chart.Tooltip />
+          {#snippet tooltip(ctx)}
+            <Chart.Tooltip {...ctx} />
           {/snippet}
         </LineChart>
       </Chart.Container>

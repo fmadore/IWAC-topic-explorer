@@ -78,8 +78,12 @@
             }
           }}
         >
-          {#snippet tooltip()}
-            <Chart.Tooltip />
+          {#snippet tooltip(ctx)}
+            <Chart.Tooltip
+              {...ctx}
+              nameKey="country"
+              formatter={(value) => typeof value === 'number' ? new Intl.NumberFormat().format(value) : value}
+            />
           {/snippet}
         </BarChart>
       </Chart.Container>
