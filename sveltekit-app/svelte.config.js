@@ -6,6 +6,9 @@ const base = process.env.BASE_PATH || '';
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
+  compilerOptions: {
+    runes: true
+  },
   kit: {
     adapter: adapter({
       pages: 'docs',
