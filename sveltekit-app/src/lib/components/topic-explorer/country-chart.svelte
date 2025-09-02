@@ -12,15 +12,21 @@
 
   let { data }: Props = $props();
 
-  // Chart config for countries
-  const palette = ['var(--chart-1)', 'var(--chart-2)', 'var(--chart-3)', 'var(--chart-4)', 'var(--chart-5)'];
-  const keyFor = (s: string) => s.toLowerCase().replace(/[^a-z0-9]+/g, '-');
+  // Chart data with specific colors for each country  
+  const colors = ['var(--chart-1)', 'var(--chart-2)', 'var(--chart-3)', 'var(--chart-4)', 'var(--chart-5)'];
   
-  const countryConfig = $derived(Object.fromEntries(
-    data.map((d, i) => [keyFor(d.country), { label: d.country, color: palette[i % palette.length] }])
-  ) as Chart.ChartConfig);
+  const chartData = $derived(data.map((d, i) => ({
+    ...d,
+    color: colors[i % colors.length]
+  })));
   
-  const barFill = (d: { country: string }) => `var(--color-${keyFor(d.country)})`;
+  const countryConfig = $derived(Object.fromEntries([
+    ['docs', { label: 'Documents' }],
+    ...data.map((d, i) => [d.country, { 
+      label: d.country, 
+      color: colors[i % colors.length] 
+    }])
+  ]) as Chart.ChartConfig);
 </script>
 
 <div class="w-full min-w-0">
@@ -31,27 +37,29 @@
       </CardTitle>
     </CardHeader>
     <CardContent class="p-4">
-      <Chart.Container config={countryConfig} class="h-[240px] w-full">
+      <Chart.Container 
+        config={countryConfig} 
+        class="h-[240px] w-full [&_.lc-grid-x-rule]:stroke-border/40 [&_.lc-grid-y-rule]:stroke-border/40 [&_.lc-axis-tick-label]:fill-foreground"
+      >
         <BarChart 
-          data={data}
+          data={chartData}
           xScale={scaleBand().padding(0.25)}
           x="country"
           y="docs"
-          axis="x"
-          series={[{
-            key: "docs",
-            label: 'Documents',
-            color: 'var(--chart-1)'
-          }]}
+          cRange={chartData.map((c) => c.color)}
+          c="color"
+          axis={true}
           props={{
             bars: {
-              fill: barFill as unknown as string,
               stroke: 'none',
               radius: 6,
               rounded: 'all'
             },
             xAxis: {
-              format: (d) => d.slice(0, 3)
+              format: (d: string) => d
+            },
+            yAxis: {
+              format: (d: number) => new Intl.NumberFormat().format(d)
             }
           }}
         >
