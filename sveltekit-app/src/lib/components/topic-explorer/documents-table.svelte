@@ -36,35 +36,35 @@
 </script>
 
 <div bind:this={ref} class={cn("", className)} {...restProps}>
-  <Card class="border-l-4 border-l-chart-4 shadow-md">
-    <CardHeader class="bg-gradient-to-r from-chart-4/10 to-transparent">
-      <CardTitle class="flex items-center gap-2 text-chart-4">
+  <Card class="border-l-4 border-l-secondary/70 shadow-sm">
+    <CardHeader class="bg-card">
+      <CardTitle class="flex items-center gap-2 text-foreground">
         📄 Documents
       </CardTitle>
     </CardHeader>
     <CardContent>
       <div class="overflow-auto">
         <Table.Root>
-          <Table.Header class="bg-gradient-to-r from-chart-4/10 to-transparent">
+          <Table.Header class="bg-secondary/30">
             <Table.Row>
-              <Table.Head class="text-chart-4 font-semibold">📅 Date</Table.Head>
-              <Table.Head class="text-chart-4 font-semibold">📰 Title</Table.Head>
-              <Table.Head class="text-chart-4 font-semibold">🏢 Newspaper</Table.Head>
-              <Table.Head class="text-chart-4 font-semibold">🌍 Country</Table.Head>
-              <Table.Head class="text-chart-4 font-semibold">📊 Prob</Table.Head>
-              <Table.Head class="text-chart-4 font-semibold">🤖 AI Polarité</Table.Head>
+              <Table.Head class="text-foreground/80 font-semibold">📅 Date</Table.Head>
+              <Table.Head class="text-foreground/80 font-semibold">📰 Title</Table.Head>
+              <Table.Head class="text-foreground/80 font-semibold">🏢 Newspaper</Table.Head>
+              <Table.Head class="text-foreground/80 font-semibold">🌍 Country</Table.Head>
+              <Table.Head class="text-foreground/80 font-semibold">📊 Prob</Table.Head>
+              <Table.Head class="text-foreground/80 font-semibold">🤖 AI Polarité</Table.Head>
             </Table.Row>
           </Table.Header>
           <Table.Body>
             {#each documents as d, index}
-              <Table.Row class="hover:bg-chart-4/5 transition-colors">
+              <Table.Row class="hover:bg-accent/40 transition-colors">
                 <Table.Cell class="text-muted-foreground">
                   {d.date ?? d.pub_date ?? ''}
                 </Table.Cell>
                 <Table.Cell>
                   {#if d.url || d.source_url || d['o:source']}
                     <a 
-                      class="text-chart-2 hover:text-chart-1 underline font-medium transition-colors" 
+                      class="text-primary hover:opacity-90 underline font-medium transition-opacity" 
                       href={(d.url || d.source_url || d['o:source'])} 
                       target="_blank" 
                       rel="noopener"
@@ -81,18 +81,18 @@
                   {d.newspaper ?? d.source ?? ''}
                 </Table.Cell>
                 <Table.Cell>
-                  <span class="px-2 py-1 rounded-full text-xs font-medium bg-chart-3 text-white">
+                  <span class="px-2 py-1 rounded-full text-xs font-medium bg-accent text-accent-foreground">
                     {d.country ?? ''}
                   </span>
                 </Table.Cell>
                 <Table.Cell>
                   {#if d.topic_prob != null}
                     {#if Number(d.topic_prob) >= 0.7}
-                      <span class="px-2 py-1 rounded-full text-xs font-medium bg-chart-1 text-white">
+                      <span class="px-2 py-1 rounded-full text-xs font-medium bg-primary text-primary-foreground">
                         {Number(d.topic_prob).toFixed(2)}
                       </span>
                     {:else if Number(d.topic_prob) >= 0.4}
-                      <span class="px-2 py-1 rounded-full text-xs font-medium bg-chart-2 text-white">
+                      <span class="px-2 py-1 rounded-full text-xs font-medium bg-secondary text-secondary-foreground">
                         {Number(d.topic_prob).toFixed(2)}
                       </span>
                     {:else}
@@ -107,7 +107,7 @@
                 <Table.Cell>
                   {#if d.gemini_polarite ?? d.chatgpt_polarite}
                     {#if (d.gemini_polarite ?? d.chatgpt_polarite) === 'positive'}
-                      <span class="px-2 py-1 rounded-full text-xs font-medium bg-chart-5 text-white">
+                      <span class="px-2 py-1 rounded-full text-xs font-medium bg-primary text-primary-foreground">
                         {d.gemini_polarite ?? d.chatgpt_polarite}
                       </span>
                     {:else if (d.gemini_polarite ?? d.chatgpt_polarite) === 'negative'}

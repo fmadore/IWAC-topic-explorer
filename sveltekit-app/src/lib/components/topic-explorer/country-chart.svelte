@@ -24,9 +24,9 @@
 </script>
 
 <div>
-  <Card class="h-full border-l-4 border-l-chart-3 shadow-md">
-    <CardHeader class="bg-gradient-to-r from-chart-3/10 to-transparent">
-      <CardTitle class="text-base flex items-center gap-2 text-chart-3">
+  <Card class="h-full border-l-4 border-l-accent/70 shadow-sm">
+    <CardHeader class="bg-card">
+      <CardTitle class="text-base flex items-center gap-2 text-foreground/90">
         🌍 By Country
       </CardTitle>
     </CardHeader>

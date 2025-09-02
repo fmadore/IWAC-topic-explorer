@@ -42,17 +42,16 @@
 <div class="space-y-4">
   <Card
     class={cn(
-      'border-l-4 shadow-lg',
-      topic ? 'border-l-chart-2' : 'border-l-border'
+  'border-l-4 shadow-sm',
+  topic ? 'border-l-primary/70' : 'border-l-border'
     )}
   >
     <CardHeader
       class={cn(
-        'bg-gradient-to-r',
-        topic ? 'from-chart-2/5 to-transparent' : 'from-muted/30'
+    'bg-card'
       )}
     >
-  <CardTitle class={cn('flex items-center gap-2', topic && 'text-chart-2')}>
+  <CardTitle class={cn('flex items-center gap-2', topic && 'text-foreground')}>
         {#if topic}
           📊 {prettify(topic.label, topic.id)} · {fmt(topic.count)} docs
         {:else}

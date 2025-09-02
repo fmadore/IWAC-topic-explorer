@@ -30,9 +30,9 @@
 </script>
 
 <aside class="md:sticky md:top-4 h-fit">
-  <Card class="border-l-4 border-l-chart-1 shadow-lg">
-    <CardHeader class="bg-gradient-to-r from-chart-1/5 to-transparent">
-      <CardTitle class="flex items-center gap-2 text-chart-1">
+  <Card class="border-l-4 border-l-primary/70 shadow-sm">
+    <CardHeader class="bg-card">
+      <CardTitle class="flex items-center gap-2 text-foreground">
         🏷️ Topics
       </CardTitle>
     </CardHeader>
@@ -42,18 +42,18 @@
           placeholder="Search topics…" 
           value={search}
           oninput={(e) => onSearchChange(e.currentTarget.value)}
-          class="border-chart-1/30 focus:border-chart-1 focus:ring-chart-1/20" 
+          class="focus:border-ring focus:ring-ring/20" 
         />
       </div>
       <div class="flex items-center gap-2">
-        <Label.Root for="minCount" class="text-chart-1 font-medium">Min count</Label.Root>
+        <Label.Root for="minCount" class="text-foreground/80 font-medium">Min count</Label.Root>
         <Input.Root 
           id="minCount" 
           type="number" 
           min={0} 
           value={minCount}
           oninput={(e) => onMinCountChange(Number(e.currentTarget.value))}
-          class="w-24 border-chart-1/30 focus:border-chart-1 focus:ring-chart-1/20" 
+          class="w-24 focus:border-ring focus:ring-ring/20" 
         />
       </div>
       <div class="space-y-2 max-h-[60vh] overflow-auto pr-1">
@@ -62,7 +62,7 @@
         {/if}
         {#each topics as t, index}
           <button
-            class="w-full text-left rounded-lg border border-border/60 hover:border-primary hover:bg-accent/50 transition-all duration-200 px-4 py-3 group"
+            class="w-full text-left rounded-lg border border-border/70 hover:border-primary hover:bg-accent/40 transition-colors duration-200 px-4 py-3 group"
             class:bg-primary={activeId === t.id}
             class:text-primary-foreground={activeId === t.id}
             class:border-primary={activeId === t.id}
@@ -74,14 +74,11 @@
                   {prettify(t.label, t.id)}
                 </div>
                 <div class="text-xs mt-1 flex items-center gap-2">
-                  <span class="px-2 py-1 rounded-full text-xs font-medium text-white"
-                        class:bg-primary-foreground={activeId === t.id}
-                        class:!text-primary={activeId === t.id}
-                        class:bg-chart-1={activeId !== t.id && index % 5 === 0}
-                        class:bg-chart-2={activeId !== t.id && index % 5 === 1}
-                        class:bg-chart-3={activeId !== t.id && index % 5 === 2}
-                        class:bg-chart-4={activeId !== t.id && index % 5 === 3}
-                        class:bg-chart-5={activeId !== t.id && index % 5 === 4}>
+                  <span class="px-2 py-1 rounded-full text-xs font-medium"
+                        class:bg-primary={activeId === t.id}
+                        class:text-primary-foreground={activeId === t.id}
+                        class:bg-accent={activeId !== t.id}
+                        class:text-accent-foreground={activeId !== t.id}>
                     {fmt(t.count)} docs
                   </span>
                 </div>

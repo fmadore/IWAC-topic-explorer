@@ -50,9 +50,9 @@
 </script>
 
 <div>
-  <Card class="h-full border-l-4 border-l-chart-5 shadow-md">
-    <CardHeader class="bg-gradient-to-r from-chart-5/10 to-transparent">
-      <CardTitle class="text-base flex items-center gap-2 text-chart-5">
+  <Card class="h-full border-l-4 border-l-accent/70 shadow-sm">
+    <CardHeader class="bg-card">
+      <CardTitle class="text-base flex items-center gap-2 text-foreground/90">
         📈 Over Time
       </CardTitle>
     </CardHeader>
