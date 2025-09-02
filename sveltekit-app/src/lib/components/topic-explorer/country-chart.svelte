@@ -12,19 +12,32 @@
 
   let { data }: Props = $props();
 
-  // Chart data with specific colors for each country  
-  const colors = ['var(--chart-1)', 'var(--chart-2)', 'var(--chart-3)', 'var(--chart-4)', 'var(--chart-5)'];
+  // Stable color mapping for specific countries - same color every time
+  const countryColors: Record<string, string> = {
+    'Togo': '#ef4444', // red
+    'Burkina Faso': '#3b82f6', // blue  
+    'Benin': '#22c55e', // green
+    "Côte d'Ivoire": '#f59e0b', // amber
+    'Niger': '#8b5cf6', // purple
+  };
+
+  // Fallback colors for other countries
+  const fallbackColors = ['#06b6d4', '#ec4899', '#84cc16', '#f97316', '#6366f1'];
+  
+  const getCountryColor = (country: string, index: number): string => {
+    return countryColors[country] || fallbackColors[index % fallbackColors.length];
+  };
   
   const chartData = $derived(data.map((d, i) => ({
     ...d,
-    color: colors[i % colors.length]
+    color: getCountryColor(d.country, i)
   })));
   
   const countryConfig = $derived(Object.fromEntries([
     ['docs', { label: 'Documents' }],
     ...data.map((d, i) => [d.country, { 
       label: d.country, 
-      color: colors[i % colors.length] 
+      color: getCountryColor(d.country, i)
     }])
   ]) as Chart.ChartConfig);
 </script>
