@@ -62,12 +62,14 @@
           cRange={chartData.map((c) => c.color)}
           c="color"
           axis={true}
+          highlight={false}
           props={{
             bars: {
               stroke: 'none',
               radius: 6,
               rounded: 'all'
             },
+            highlight: { area: { fill: "none" } },
             xAxis: {
               format: (d: string) => d
             },
