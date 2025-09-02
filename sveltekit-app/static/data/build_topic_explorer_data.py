@@ -99,7 +99,7 @@ def main():
             pass
 
     print(f"Loading HF dataset {args.repo} · config={args.config_name}…")
-    ds = load_dataset(args.repo, name=args.config_name, split="train", token=token, trust_remote_code=True)
+    ds = load_dataset(args.repo, name=args.config_name, split="train", token=token)
     df = ds.to_pandas()
     if args.max_docs and len(df) > args.max_docs:
         df = df.head(args.max_docs)
