@@ -70,7 +70,7 @@
 {/snippet}
 
 {#if active && payload?.length}
-	<div
+    <div
 		bind:this={ref}
 		data-slot="chart-tooltip"
 		class={cn(
@@ -89,9 +89,10 @@
 				<div class="grid gap-1.5">
 					{#each payload as item, index}
 						{@const itemConfig = getPayloadConfigFromPayload(config, item, nameKey)}
+						{@const raw = (item.value ?? 0) as string | number | (string | number)[]}
 						{@const value = formatter
-							? formatter(item.value, getPayloadProperty(item, nameKey), item, index, payload)
-							: item.value}
+							? formatter(raw, getPayloadProperty(item, nameKey), item, index, payload)
+							: raw}
 						
 						<div class="flex w-full flex-wrap items-stretch gap-2 [&>svg]:h-2.5 [&>svg]:w-2.5 [&>svg]:text-muted-foreground">
 							{#if !hideIndicator}

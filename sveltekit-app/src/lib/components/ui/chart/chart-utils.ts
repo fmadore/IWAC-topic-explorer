@@ -1,5 +1,5 @@
-import type { Tooltip } from "layerchart";
 import { getContext, setContext, type Component, type ComponentProps, type Snippet } from "svelte";
+import * as Tooltip from "$lib/components/ui/tooltip";
 
 export const THEMES = { light: "", dark: ".dark" } as const;
 
@@ -15,14 +15,26 @@ export type ChartConfig = {
 
 export type ExtractSnippetParams<T> = T extends Snippet<[infer P]> ? P : never;
 
-export type TooltipPayload = ExtractSnippetParams<
-	ComponentProps<typeof Tooltip.Root>["children"]
->["payload"][number];
+// Keep payload flexible to work across chart versions
+export type TooltipPayload = {
+	value?: number | string;
+	name?: string;
+	key?: string;
+	payload?: Record<string, unknown>;
+	// allow extra fields used by LayerChart
+	[k: string]: unknown;
+};
 
 // Helper to safely access dynamic properties on TooltipPayload
 export function getPayloadProperty(payload: TooltipPayload, key: string): any {
 	if (typeof payload !== "object" || payload === null) return undefined;
-	return (payload as any)[key];
+	// direct access
+	if (key in (payload as any)) return (payload as any)[key];
+	// nested payload payload
+	if ((payload as any).payload && key in (payload as any).payload) {
+		return (payload as any).payload[key];
+	}
+	return undefined;
 }
 
 // Helper to extract item config from a payload.

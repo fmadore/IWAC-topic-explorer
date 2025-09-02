@@ -80,14 +80,14 @@
   const countryConfig: Chart.ChartConfig = {
     docs: { 
       label: 'Documents', 
-      color: 'hsl(var(--chart-1))' 
+      color: 'var(--chart-1)'
     }
   };
   
   const timeConfig: Chart.ChartConfig = {
     docs: { 
       label: 'Documents', 
-      color: 'hsl(var(--chart-2))' 
+      color: 'var(--chart-2)'
     }
   };
 </script>
@@ -143,7 +143,7 @@
               <Card class="h-full">
                 <CardHeader><CardTitle class="text-base">By Country</CardTitle></CardHeader>
                 <CardContent>
-                  <Chart.Container config={countryConfig} class="min-h-[200px] w-full">
+          <Chart.Container config={countryConfig} class="min-h-[240px] w-full">
                     <BarChart 
                       data={countryData}
                       xScale={scaleBand().padding(0.25)}
@@ -161,7 +161,7 @@
                         }
                       }}
                     >
-                      {#snippet children()}
+            {#snippet tooltip()}
                         <Chart.Tooltip />
                       {/snippet}
                     </BarChart>
@@ -171,7 +171,7 @@
               <Card class="h-full">
                 <CardHeader><CardTitle class="text-base">Over Time</CardTitle></CardHeader>
                 <CardContent>
-                  <Chart.Container config={timeConfig} class="min-h-[200px] w-full">
+          <Chart.Container config={timeConfig} class="min-h-[240px] w-full">
                     <LineChart 
                       data={monthData}
                       x="month"
@@ -188,7 +188,7 @@
                         }
                       }}
                     >
-                      {#snippet children()}
+            {#snippet tooltip()}
                         <Chart.Tooltip />
                       {/snippet}
                     </LineChart>
