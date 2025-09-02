@@ -23,12 +23,12 @@
   // Serve data from SvelteKit static assets (sveltekit-app/static/data)
   const DATA_BASE = `${base}/data`;
 
-  let summary: Summary | null = null;
-  let search = '';
-  let minCount = 5;
-  let filtered: Summary['topics'] = [];
-  let active: TopicFile | null = null;
-  let activeId: number | null = null;
+  let summary = $state<Summary | null>(null);
+  let search = $state('');
+  let minCount = $state(5);
+  let filtered = $state<Summary['topics']>([]);
+  let active = $state<TopicFile | null>(null);
+  let activeId = $state<number | null>(null);
 
   const fmt = (n: number) => new Intl.NumberFormat().format(n);
   const prettify = (label: string | null, id: number) => (label && label.trim() ? label : `Topic ${id}`);
@@ -61,28 +61,34 @@
 
   onMount(loadSummary);
 
-  $: applyFilter();
+  // Convert reactive statements to $derived runes
+  $effect(() => {
+    applyFilter();
+  });
 
   // Derived chart data for LayerChart
-  $: countryData = active
+  const countryData = $derived(active
     ? Object.entries(active.counts_by_country || {}).map(([country, docs]) => ({
         country,
         docs: Number(docs) || 0
       }))
-    : [];
-  $: monthData = active
+    : []);
+  
+  const monthData = $derived(active
     ? Object.keys(active.counts_by_month || {})
         .sort()
         .map((m) => ({ month: m, docs: Number((active?.counts_by_month || {})[m]) || 0 }))
-    : [];
+    : []);
 
   // Chart configs (shadcn-svelte style)
-  const countryConfig: Chart.ChartConfig = {
-    docs: { 
-      label: 'Documents', 
-      color: 'var(--chart-1)'
-    }
-  };
+  // palette for per-country colors
+  const palette = ['var(--chart-1)', 'var(--chart-2)', 'var(--chart-3)', 'var(--chart-4)', 'var(--chart-5)'];
+  const keyFor = (s: string) => s.toLowerCase().replace(/[^a-z0-9]+/g, '-');
+  // Dynamic chart config: one entry per country so ChartStyle sets CSS vars we can reference
+  const countryConfig = $derived(Object.fromEntries(
+    countryData.map((d, i) => [keyFor(d.country), { label: d.country, color: palette[i % palette.length] }])
+  ) as Chart.ChartConfig);
+  const barFill = (d: { country: string }) => `var(--color-${keyFor(d.country)})`;
   
   const timeConfig: Chart.ChartConfig = {
     docs: { 
@@ -122,7 +128,7 @@
           {#each filtered as t}
             <button
               class="w-full text-left rounded-md border border-border/60 hover:border-primary px-3 py-2"
-              on:click={() => selectTopic(t.id)}
+              onclick={() => selectTopic(t.id)}
             >
               <div class="font-medium line-clamp-2">{prettify(t.label, t.id)}</div>
               <div class="text-xs text-muted-foreground">{fmt(t.count)}</div>
@@ -143,7 +149,7 @@
               <Card class="h-full">
                 <CardHeader><CardTitle class="text-base">By Country</CardTitle></CardHeader>
                 <CardContent>
-          <Chart.Container config={countryConfig} class="min-h-[240px] w-full">
+                  <Chart.Container config={countryConfig} class="min-h-[240px] w-full">
                     <BarChart 
                       data={countryData}
                       xScale={scaleBand().padding(0.25)}
@@ -152,10 +158,18 @@
                       axis="x"
                       series={[{
                         key: "docs",
-                        label: countryConfig.docs.label,
-                        color: countryConfig.docs.color
+                        label: 'Documents',
+                        color: 'var(--chart-1)'
                       }]}
                       props={{
+                        bars: {
+                          // color each bar using the variable we defined for its country
+                          // LayerChart's types expect string here; cast the accessor for now.
+                          fill: barFill as unknown as string,
+                          stroke: 'none',
+                          radius: 6,
+                          rounded: 'all'
+                        },
                         xAxis: {
                           format: (d) => d.slice(0, 3)
                         }
