@@ -32,7 +32,7 @@
     return new Date(Date.UTC(year, monthIdx, 1));
   }
 
-  // Aggregate by year for a cleaner timeline
+  // Aggregate by year; include zero-filled years so the line returns to 0 when no occurrences
   const chartData = $derived((() => {
     const acc = new Map<number, number>();
     for (const d of data || []) {
@@ -41,10 +41,18 @@
       const y = dt.getUTCFullYear();
       acc.set(y, (acc.get(y) || 0) + Number(d.docs || 0));
     }
-    const rows = Array.from(acc.entries())
-      .map(([year, docs]) => ({ year, docs, date: new Date(Date.UTC(year, 0, 1)) }))
-      .sort((a, b) => a.year - b.year);
-    return rows as Array<{ year: number; docs: number; date: Date }>;
+
+    const years = Array.from(acc.keys());
+    if (years.length === 0) return [] as Array<{ year: number; docs: number; date: Date }>;
+    const minYear = Math.min(...years);
+    const maxYear = Math.max(...years);
+
+    const rows: Array<{ year: number; docs: number; date: Date }> = [];
+    for (let year = minYear; year <= maxYear; year++) {
+      const docs = acc.get(year) ?? 0;
+      rows.push({ year, docs, date: new Date(Date.UTC(year, 0, 1)) });
+    }
+    return rows;
   })());
 
   const formatMonth = (dt: Date) => `${dt.getUTCFullYear()}-${String(dt.getUTCMonth() + 1).padStart(2, '0')}`;
