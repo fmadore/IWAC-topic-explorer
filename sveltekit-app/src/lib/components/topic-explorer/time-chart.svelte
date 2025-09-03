@@ -3,6 +3,7 @@
   import * as Chart from '$lib/components/ui/chart';
   import { LineChart } from 'layerchart';
   import { scaleUtc } from 'd3-scale';
+  import { curveNatural } from 'd3-shape';
 
   type TimeData = { month: string; docs: number };
 
@@ -59,27 +60,39 @@
     <CardContent class="p-4">
       <Chart.Container
         config={timeConfig}
-        class="h-[240px] w-full [&_.lc-area-path]:fill-transparent [&_.lc-line]:stroke-2 [&_.lc-grid-x-rule]:stroke-border/40 [&_.lc-grid-y-rule]:stroke-border/40"
+        class="h-[260px] w-full
+          [&_.lc-area-path]:fill-transparent
+          [&_.lc-line]:stroke-2
+          [&_.lc-grid-x-rule]:stroke-border/40 [&_.lc-grid-y-rule]:stroke-border/40
+          [&_.lc-spline-path]:stroke-[var(--color-docs)]
+          [&_.lc-point]:fill-[var(--color-docs)] [&_.lc-point]:stroke-background
+        "
       >
-        <LineChart 
-      data={chartData}
-      x="date"
+        <LineChart
+          points={{ r: 3 }}
+          data={chartData}
+          x="date"
           y="docs"
-          axis="x"
-      xScale={scaleUtc()}
+          axis={true}
+          xScale={scaleUtc()}
           series={[{
-            key: "docs",
+            key: 'docs',
             label: timeConfig.docs.label,
             color: 'var(--color-docs)'
           }]}
           props={{
+            spline: { curve: curveNatural, motion: 'tween', strokeWidth: 2 },
+            highlight: { points: { motion: 'none', r: 5 } },
             xAxis: {
               format: (d) => (d as Date).getUTCFullYear().toString()
+            },
+            yAxis: {
+              format: (v: number) => new Intl.NumberFormat('en-US', { maximumFractionDigits: 0 }).format(v)
             }
           }}
         >
           {#snippet tooltip(ctx)}
-            <Chart.Tooltip {...ctx} />
+            <Chart.Tooltip {...ctx} hideLabel />
           {/snippet}
         </LineChart>
       </Chart.Container>
