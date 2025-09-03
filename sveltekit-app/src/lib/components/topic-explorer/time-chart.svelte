@@ -58,18 +58,17 @@
       </CardTitle>
     </CardHeader>
     <CardContent class="p-4">
-      <Chart.Container
+    <Chart.Container
         config={timeConfig}
         class="h-[260px] w-full
-          [&_.lc-area-path]:fill-transparent
+      [&_.lc-area-path]:fill-transparent [&_.lc-area-path]:stroke-0
           [&_.lc-line]:stroke-2
           [&_.lc-grid-x-rule]:stroke-border/40 [&_.lc-grid-y-rule]:stroke-border/40
-          [&_.lc-spline-path]:stroke-[var(--color-docs)]
-          [&_.lc-point]:fill-[var(--color-docs)] [&_.lc-point]:stroke-background
+      [&_.lc-spline-path]:stroke-[var(--color-docs)] [&_.lc-spline-path]:fill-transparent
         "
       >
         <LineChart
-          points={{ r: 3 }}
+      points={false}
           data={chartData}
           x="date"
           y="docs"
@@ -82,7 +81,7 @@
           }]}
           props={{
             spline: { curve: curveNatural, motion: 'tween', strokeWidth: 2 },
-            highlight: { points: { motion: 'none', r: 5 } },
+            // no highlight points; keep just a clean line
             xAxis: {
               format: (d) => (d as Date).getUTCFullYear().toString()
             },
