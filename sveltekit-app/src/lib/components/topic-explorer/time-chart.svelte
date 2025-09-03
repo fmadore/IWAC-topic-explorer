@@ -3,7 +3,7 @@
   import * as Chart from '$lib/components/ui/chart';
   import { LineChart } from 'layerchart';
   import { scaleUtc } from 'd3-scale';
-  import { curveNatural } from 'd3-shape';
+  import { curveMonotoneX } from 'd3-shape';
 
   type TimeData = { month: string; docs: number };
 
@@ -52,6 +52,9 @@
       const docs = acc.get(year) ?? 0;
       rows.push({ year, docs, date: new Date(Date.UTC(year, 0, 1)) });
     }
+    // add a small x-domain pad by inserting zero-value points just outside the range
+    rows.unshift({ year: minYear - 1, docs: 0, date: new Date(Date.UTC(minYear, -6, 1)) });
+    rows.push({ year: maxYear + 1, docs: 0, date: new Date(Date.UTC(maxYear, 12 + 6, 1)) });
     return rows;
   })());
 
@@ -88,7 +91,7 @@
             color: 'var(--color-docs)'
           }]}
           props={{
-            spline: { curve: curveNatural, motion: 'tween', strokeWidth: 2 },
+            spline: { curve: curveMonotoneX, motion: 'tween', strokeWidth: 2 },
             // no highlight points; keep just a clean line
             xAxis: {
               format: (d) => (d as Date).getUTCFullYear().toString()
