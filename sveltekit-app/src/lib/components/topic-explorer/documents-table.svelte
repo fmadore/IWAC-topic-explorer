@@ -3,6 +3,7 @@
   import * as Table from '$lib/components/ui/table';
   import { cn, type WithElementRef } from '$lib/utils';
   import type { HTMLAttributes } from 'svelte/elements';
+  import { getCountryColor, getTextColorForBg } from './colors';
 
   type Document = {
     date?: string;
@@ -228,9 +229,15 @@
                   </span>
                 </Table.Cell>
                 <Table.Cell>
-                  <span class="px-2 py-1 rounded-full text-xs font-medium bg-accent text-accent-foreground">
-                    {d.country ?? ''}
-                  </span>
+                  {#if d.country}
+                    {@const bg = getCountryColor(d.country)}
+                    {@const fg = getTextColorForBg(bg)}
+                    <span class="px-2 py-1 rounded-full text-xs font-medium" style={`background-color:${bg};color:${fg}`}>
+                      {d.country}
+                    </span>
+                  {:else}
+                    <span class="px-2 py-1 rounded-full text-xs font-medium bg-muted text-muted-foreground">—</span>
+                  {/if}
                 </Table.Cell>
                 <Table.Cell>
                   {#if d.topic_prob != null}

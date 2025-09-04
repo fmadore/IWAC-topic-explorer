@@ -3,6 +3,7 @@
   import * as Chart from '$lib/components/ui/chart';
   import { BarChart } from 'layerchart';
   import { scaleBand } from 'd3-scale';
+  import { getCountryColor } from './colors';
 
   type CountryData = { country: string; docs: number };
 
@@ -12,32 +13,16 @@
 
   let { data }: Props = $props();
 
-  // Stable color mapping for specific countries - same color every time
-  const countryColors: Record<string, string> = {
-    'Togo': '#ef4444', // red
-    'Burkina Faso': '#3b82f6', // blue  
-    'Benin': '#22c55e', // green
-    "Côte d'Ivoire": '#f59e0b', // amber
-    'Niger': '#8b5cf6', // purple
-  };
-
-  // Fallback colors for other countries
-  const fallbackColors = ['#06b6d4', '#ec4899', '#84cc16', '#f97316', '#6366f1'];
-  
-  const getCountryColor = (country: string, index: number): string => {
-    return countryColors[country] || fallbackColors[index % fallbackColors.length];
-  };
-  
-  const chartData = $derived(data.map((d, i) => ({
+  const chartData = $derived(data.map((d) => ({
     ...d,
-    color: getCountryColor(d.country, i)
+    color: getCountryColor(d.country)
   })));
   
   const countryConfig = $derived(Object.fromEntries([
     ['docs', { label: 'Documents' }],
-    ...data.map((d, i) => [d.country, { 
+    ...data.map((d) => [d.country, { 
       label: d.country, 
-      color: getCountryColor(d.country, i)
+      color: getCountryColor(d.country)
     }])
   ]) as Chart.ChartConfig);
 </script>
