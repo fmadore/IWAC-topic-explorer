@@ -185,3 +185,42 @@
     cursor: not-allowed;
   }
 }
+
+/* Gradient pills for AI polarity */
+@layer base {
+  .pill-gradient {
+    border-radius: var(--radius);
+  }
+  .pill-gradient[data-tone="positive"] {
+    background-image: linear-gradient(
+      to right,
+      color-mix(in oklch, var(--primary), white 18%),
+      color-mix(in oklch, var(--primary), black 10%)
+    );
+    color: var(--primary-foreground);
+  }
+  .pill-gradient[data-tone="negative"] {
+    background-image: linear-gradient(
+      to right,
+      color-mix(in oklch, var(--destructive), white 18%),
+      color-mix(in oklch, var(--destructive), black 10%)
+    );
+    color: var(--destructive-foreground);
+  }
+  .pill-gradient[data-tone="neutral"] {
+    background-image: linear-gradient(
+      to right,
+      color-mix(in oklch, var(--muted), white 12%),
+      color-mix(in oklch, var(--muted), black 6%)
+    );
+    color: var(--muted-foreground);
+  }
+  .pill-gradient[data-tone="mixed"] {
+    background-image: linear-gradient(
+      to right,
+      color-mix(in oklch, var(--accent), white 14%),
+      color-mix(in oklch, var(--accent), black 8%)
+    );
+    color: var(--accent-foreground);
+  }
+}

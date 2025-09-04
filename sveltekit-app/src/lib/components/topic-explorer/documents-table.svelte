@@ -194,7 +194,7 @@
                   class="inline-flex items-center gap-1 hover:text-foreground cursor-pointer select-none"
                   onclick={() => setSort('polarity')}
                 >
-                  🤖 AI Polarité
+                  🤖 AI polarity
                   {#if sortKey === 'polarity'}<span class="text-xs">{sortDir === 'asc' ? '▲' : '▼'}</span>{/if}
                 </button>
               </Table.Head>
@@ -260,19 +260,12 @@
                 </Table.Cell>
                 <Table.Cell>
                   {#if d.gemini_polarite ?? d.chatgpt_polarite}
-                    {#if (d.gemini_polarite ?? d.chatgpt_polarite) === 'positive'}
-                      <span class="px-2 py-1 rounded-full text-xs font-medium bg-primary text-primary-foreground">
-                        {d.gemini_polarite ?? d.chatgpt_polarite}
-                      </span>
-                    {:else if (d.gemini_polarite ?? d.chatgpt_polarite) === 'negative'}
-                      <span class="px-2 py-1 rounded-full text-xs font-medium bg-destructive text-destructive-foreground">
-                        {d.gemini_polarite ?? d.chatgpt_polarite}
-                      </span>
-                    {:else}
-                      <span class="px-2 py-1 rounded-full text-xs font-medium bg-muted text-muted-foreground">
-                        {d.gemini_polarite ?? d.chatgpt_polarite}
-                      </span>
-                    {/if}
+                    {@const pol = (d.gemini_polarite ?? d.chatgpt_polarite) as string}
+                    {@const polLower = pol?.toLowerCase?.() ?? ''}
+                    {@const tone = polLower === 'positive' ? 'positive' : polLower === 'negative' ? 'negative' : polLower === 'mixed' ? 'mixed' : 'neutral'}
+                    <span class="px-2 py-1 rounded-full text-xs font-medium pill-gradient" data-tone={tone}>
+                      {pol}
+                    </span>
                   {:else}
                     <span class="text-muted-foreground">—</span>
                   {/if}
