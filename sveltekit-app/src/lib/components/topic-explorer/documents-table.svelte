@@ -50,12 +50,22 @@
   const getNewspaper = (d: Document): string => (d.newspaper ?? d.source ?? '').toLowerCase();
   const getCountry = (d: Document): string => (d.country ?? '').toLowerCase();
   const getProb = (d: Document): number => (d.topic_prob != null ? Number(d.topic_prob) : Number.NEGATIVE_INFINITY);
-  const getPolarityRaw = (d: Document): string => (d.gemini_polarite ?? d.chatgpt_polarite ?? '').toLowerCase();
-  const polarityOrder: Record<string, number> = { negative: -1, neutral: 0, mixed: 0, positive: 1 };
-  const getPolarity = (d: Document): number => {
-    const p = getPolarityRaw(d);
-    return polarityOrder[p] ?? 0;
-  };
+  const getPolarityRaw = (d: Document): string => (d.gemini_polarite ?? d.chatgpt_polarite ?? '').toString();
+  type PolarKey = 'very-negative' | 'negative' | 'neutral' | 'positive' | 'very-positive';
+  type PolarInfo = { score: -2 | -1 | 0 | 1 | 2; label: 'Very Negative' | 'Negative' | 'Neutral' | 'Positive' | 'Very Positive'; key: PolarKey };
+  function normalizePolarity(value: string): PolarInfo {
+    const v = (value || '').trim().toLowerCase();
+    // accept English + French + common variants
+    if (/(very\s*positive|très\s*positif|tres\s*positif|très\s*positive|\+\+|vp)/.test(v)) return { score: 2, label: 'Very Positive', key: 'very-positive' };
+    if (/(positive|positif|positiva|pos)/.test(v)) return { score: 1, label: 'Positive', key: 'positive' };
+    if (/(very\s*negative|très\s*n[ée]gatif|tres\s*negatif|\-\-|vn)/.test(v)) return { score: -2, label: 'Very Negative', key: 'very-negative' };
+    if (/(negative|n[ée]gatif|negatif|neg)/.test(v)) return { score: -1, label: 'Negative', key: 'negative' };
+    // mixed -> treat as neutral for ordering
+    if (/(mixed|mixte)/.test(v)) return { score: 0, label: 'Neutral', key: 'neutral' };
+    // default neutral
+    return { score: 0, label: 'Neutral', key: 'neutral' };
+  }
+  const getPolarity = (d: Document): number => normalizePolarity(getPolarityRaw(d)).score;
 
   function setSort(key: SortKey) {
     if (sortKey === key) {
@@ -260,11 +270,10 @@
                 </Table.Cell>
                 <Table.Cell>
                   {#if d.gemini_polarite ?? d.chatgpt_polarite}
-                    {@const pol = (d.gemini_polarite ?? d.chatgpt_polarite) as string}
-                    {@const polLower = pol?.toLowerCase?.() ?? ''}
-                    {@const tone = polLower === 'positive' ? 'positive' : polLower === 'negative' ? 'negative' : polLower === 'mixed' ? 'mixed' : 'neutral'}
-                    <span class="px-2 py-1 rounded-full text-xs font-medium pill-gradient" data-tone={tone}>
-                      {pol}
+                    {@const raw = (d.gemini_polarite ?? d.chatgpt_polarite) as string}
+                    {@const info = normalizePolarity(raw)}
+                    <span class="px-2 py-1 rounded-full text-xs font-medium pill-gradient" data-polar={info.key}>
+                      {info.label}
                     </span>
                   {:else}
                     <span class="text-muted-foreground">—</span>

@@ -26,6 +26,13 @@
   --border: oklch(0.92 0.01 255);
   --input: oklch(0.92 0.01 255);
   --ring: oklch(0.65 0.12 255);
+  /* Polarity scale base hues: greens for positive, reds for negative */
+  --polar-positive: oklch(0.72 0.16 136);
+  --polar-very-positive: oklch(0.80 0.2 136);
+  --polar-negative: oklch(0.64 0.16 25);
+  --polar-very-negative: oklch(0.52 0.22 25);
+  --polar-neutral: oklch(0.92 0.01 255);
+  --polar-on: oklch(0.99 0.003 255);
   /* Cohesive, cool palette with adequate contrast for white text */
   --chart-1: oklch(0.50 0.09 255); /* blue */
   --chart-2: oklch(0.48 0.08 240); /* blue-violet */
@@ -64,6 +71,13 @@
   --border: oklch(0.32 0.02 255);
   --input: oklch(0.28 0.02 255);
   --ring: oklch(0.72 0.12 255);
+  /* Polarity scale base hues for dark theme */
+  --polar-positive: oklch(0.70 0.17 136);
+  --polar-very-positive: oklch(0.78 0.22 136);
+  --polar-negative: oklch(0.60 0.17 25);
+  --polar-very-negative: oklch(0.48 0.24 25);
+  --polar-neutral: oklch(0.32 0.02 255);
+  --polar-on: oklch(0.99 0.004 255);
   --chart-1: oklch(0.56 0.10 255);
   --chart-2: oklch(0.54 0.09 240);
   --chart-3: oklch(0.52 0.09 220);
@@ -190,37 +204,48 @@
 @layer base {
   .pill-gradient {
     border-radius: var(--radius);
+    padding: 0.125rem 0.5rem;
   }
-  .pill-gradient[data-tone="positive"] {
+  /* 5-step polarity scale */
+  .pill-gradient[data-polar="very-positive"] {
     background-image: linear-gradient(
       to right,
-      color-mix(in oklch, var(--primary), white 18%),
-      color-mix(in oklch, var(--primary), black 10%)
+      color-mix(in oklch, var(--polar-very-positive), white 6%),
+      color-mix(in oklch, var(--polar-very-positive), black 10%)
     );
-    color: var(--primary-foreground);
+    color: var(--polar-on);
   }
-  .pill-gradient[data-tone="negative"] {
+  .pill-gradient[data-polar="positive"] {
     background-image: linear-gradient(
       to right,
-      color-mix(in oklch, var(--destructive), white 18%),
-      color-mix(in oklch, var(--destructive), black 10%)
+      color-mix(in oklch, var(--polar-positive), white 10%),
+      color-mix(in oklch, var(--polar-positive), black 8%)
     );
-    color: var(--destructive-foreground);
+    color: var(--polar-on);
   }
-  .pill-gradient[data-tone="neutral"] {
+  .pill-gradient[data-polar="negative"] {
     background-image: linear-gradient(
       to right,
-      color-mix(in oklch, var(--muted), white 12%),
-      color-mix(in oklch, var(--muted), black 6%)
+      color-mix(in oklch, var(--polar-negative), white 10%),
+      color-mix(in oklch, var(--polar-negative), black 8%)
     );
-    color: var(--muted-foreground);
+    color: var(--polar-on);
   }
-  .pill-gradient[data-tone="mixed"] {
+  .pill-gradient[data-polar="very-negative"] {
     background-image: linear-gradient(
       to right,
-      color-mix(in oklch, var(--accent), white 14%),
-      color-mix(in oklch, var(--accent), black 8%)
+      color-mix(in oklch, var(--polar-very-negative), white 6%),
+      color-mix(in oklch, var(--polar-very-negative), black 12%)
     );
-    color: var(--accent-foreground);
+    color: var(--polar-on);
   }
+  .pill-gradient[data-polar="neutral"] {
+    background-image: linear-gradient(
+      to right,
+      color-mix(in oklch, var(--polar-neutral), white 8%),
+      color-mix(in oklch, var(--polar-neutral), black 6%)
+    );
+    color: var(--foreground);
+  }
+  /* mixed maps to neutral in logic; no special style */
 }
