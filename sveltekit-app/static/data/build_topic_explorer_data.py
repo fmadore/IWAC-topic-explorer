@@ -47,30 +47,35 @@ def clean_topic_label(label: str) -> str:
     """
     Clean topic labels by:
     1. Removing topic ID prefix (e.g., "91_" from "91_pouytenga_sécurité_faib_tenue")
-    2. Replacing underscores with spaces
-    3. Capitalizing first letter of each word
-    4. Handling special characters properly
+    2. Treating underscores as separators between tokens and joining tokens with " - "
+    3. Preserving internal spaces within tokens and normalizing whitespace
+    4. Capitalizing first letter of each word (keeps accents)
     """
     if not label:
         return label
     
     # Remove leading topic ID number and underscore (e.g., "91_" or "1_")
-    import re
-    cleaned = re.sub(r'^\d+_', '', label)
-    
-    # Replace underscores with spaces
-    cleaned = cleaned.replace('_', ' ')
-    
-    # Split into words and capitalize each word, preserving accents
-    words = cleaned.split()
-    capitalized_words = []
-    for word in words:
-        if word:
-            # Capitalize first letter while preserving accents
-            capitalized_word = word[0].upper() + word[1:].lower() if len(word) > 1 else word.upper()
-            capitalized_words.append(capitalized_word)
-    
-    return ' '.join(capitalized_words)
+    cleaned = re.sub(r'^\d+_', '', label.strip())
+
+    # Split on underscores to keep tokens (tokens may contain spaces already)
+    # Example: "jeûne musulman_ramadan musulman_muhammad_prophète muhammad"
+    #   -> ["jeûne musulman", "ramadan musulman", "muhammad", "prophète muhammad"]
+    parts = [p.strip() for p in cleaned.split('_') if p and p.strip()]
+
+    # Normalize internal whitespace within each token and capitalize words
+    def cap_words(s: str) -> str:
+        # Collapse multiple spaces then capitalize each word (preserve accents)
+        normalized = ' '.join(s.split())
+        return ' '.join(
+            (w[0].upper() + w[1:].lower()) if len(w) > 1 else w.upper()
+            for w in normalized.split(' ')
+            if w
+        )
+
+    capitalized_parts = [cap_words(p) for p in parts]
+
+    # Join tokens with a dash and spaces
+    return ' - '.join(capitalized_parts)
 
 
 def main():
