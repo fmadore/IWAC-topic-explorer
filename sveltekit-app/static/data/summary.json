@@ -1,1261 +1,1726 @@
 {
   "total_docs": 11664,
-  "unique_topics": 314,
+  "unique_topics": 344,
   "topics": [
     {
       "id": -1,
       "label": "Outlier",
-      "count": 6197
-    },
-    {
-      "id": 117,
-      "label": "Lomé Ecole Education Mme",
-      "count": 170
-    },
-    {
-      "id": 237,
-      "label": "Mois Sacrer Fidèle Devoir Confession Religieux Entrer Confession",
-      "count": 165
-    },
-    {
-      "id": 275,
-      "label": "Ouagadougou Burkina Faso Oci Roch",
-      "count": 117
-    },
-    {
-      "id": 319,
-      "label": "Million Franc Ibrahim Comité National Alidou",
-      "count": 105
-    },
-    {
-      "id": 165,
-      "label": "Gendarmerie National Ouagadougou Milliard Cfa Ladji Sidibé",
-      "count": 103
-    },
-    {
-      "id": 241,
-      "label": "Million Franc Franc Cfa Tiendrébéogo Amadou",
-      "count": 103
-    },
-    {
-      "id": 29,
-      "label": "Ouagadougou Dénommer État Cause Extrémisme",
-      "count": 90
-    },
-    {
-      "id": 316,
-      "label": "Ouagadougou Bobo Sénégal Dakar Yamoussoukro",
-      "count": 90
-    },
-    {
-      "id": 317,
-      "label": "Togo Umt Joseph Confession Religieux Dignitaire",
-      "count": 88
-    },
-    {
-      "id": 90,
-      "label": "Construction Mosquée Construire Mosquée Million Cfa National Islamique",
-      "count": 81
-    },
-    {
-      "id": 272,
-      "label": "Lapidation Burkina Faib Association Islamique Burkina Faso",
-      "count": 81
-    },
-    {
-      "id": 97,
-      "label": "Islamique Niger Abdourahamane Abdoul Nigérien",
-      "count": 66
-    },
-    {
-      "id": 238,
-      "label": "Enseignement Islamique Musulman Devoir Islam Islam Jihad",
-      "count": 65
-    },
-    {
-      "id": 273,
-      "label": "Voltaïque Hadj Moussa Confessionnel Fada Gourma",
-      "count": 62
-    },
-    {
-      "id": 303,
-      "label": "Imam Communauté Bernard Ouémé Liban",
-      "count": 58
-    },
-    {
-      "id": 212,
-      "label": "Celer Pouvoir Islamique Mondial Rapprocher Dieu Congrès Mondial",
-      "count": 57
-    },
-    {
-      "id": 205,
-      "label": "Blaise Compaoré Etat Islamique Milliard Cfa Conférence Islamique",
-      "count": 55
-    },
-    {
-      "id": 147,
-      "label": "Coran Ablution Jeûner Démé",
-      "count": 54
-    },
-    {
-      "id": 101,
-      "label": "Réouverture Mosquée Ouléma Ablution Atacora",
-      "count": 51
-    },
-    {
-      "id": 209,
-      "label": "Nigérien Mahamadou Mohamed Bazoum Tillabéri",
-      "count": 51
-    },
-    {
-      "id": 1,
-      "label": "Extrémisme Religieux Coutumier Extrémisme Violent Leader Religieux",
-      "count": 50
-    },
-    {
-      "id": 266,
-      "label": "Dignitaire Cotonou Sidi Novo",
-      "count": 49
-    },
-    {
-      "id": 301,
-      "label": "Imam Mosquée Al Coran Homme Foi Auguste",
-      "count": 49
-    },
-    {
-      "id": 18,
-      "label": "Ramatoulaye Kébir Tabaski Kébir El Kébir",
-      "count": 48
-    },
-    {
-      "id": 128,
-      "label": "Musulman Niger Islamique Niger Oumma Islamique Niger Peuple",
-      "count": 48
-    },
-    {
-      "id": 54,
-      "label": "Salman Clémence Datte Ong",
-      "count": 46
-    },
-    {
-      "id": 320,
-      "label": "Puberté Salut Luire Paix Luire Fatiha",
-      "count": 46
-    },
-    {
-      "id": 226,
-      "label": "Hadj Moussa Sénégal Oummat Hadj Cissé",
-      "count": 44
-    },
-    {
-      "id": 150,
-      "label": "Beal Habit Imam El Bayane Energie",
-      "count": 43
-    },
-    {
-      "id": 56,
-      "label": "Insurrection Électeur Collège Sage Cerfi",
-      "count": 41
-    },
-    {
-      "id": 160,
-      "label": "Prélude Kpalimé État Faure Officiant",
-      "count": 40
-    },
-    {
-      "id": 166,
-      "label": "Imam Mosquée Allah Grand Ousmane Sacrifier Tradition",
-      "count": 40
-    },
-    {
-      "id": 20,
-      "label": "Dignitaire Hadj Mamadou Obsèque Félix Houphouët",
-      "count": 39
-    },
-    {
-      "id": 104,
-      "label": "Strict Respect Union Islamique Exhorter Kebir",
-      "count": 38
-    },
-    {
-      "id": 114,
-      "label": "Prophète Mohamed Prophète Islam Muhammad Mohamed",
-      "count": 38
-    },
-    {
-      "id": 135,
-      "label": "Hadj Koné Alassane Dramane Boga Doudou Konan Bédié",
-      "count": 35
-    },
-    {
-      "id": 112,
-      "label": "Pouvoir Faire Pouvoir Contenir Dédougou Faire Bénédiction",
-      "count": 34
-    },
-    {
-      "id": 225,
-      "label": "Million Cfa Pilier Islam Hadj Faire Mecque Cnopm",
-      "count": 34
-    },
-    {
-      "id": 127,
-      "label": "Islamique Niger Abdourahamane Abdourahamane Tiani Brigade Abdourahamane",
-      "count": 32
-    },
-    {
-      "id": 0,
-      "label": "Mois Bénir Jeûne Musulman Produit Nécessité Carême",
-      "count": 31
-    },
-    {
-      "id": 81,
-      "label": "Etat Pouvoir Hadj Faire Pélerin Pouvoir Effectuer",
-      "count": 31
-    },
-    {
-      "id": 88,
-      "label": "Hadj Vassiriki Imam El Félix Houphouët Diakité",
-      "count": 31
-    },
-    {
-      "id": 116,
-      "label": "Allah Puissant Célébrer Samedi Tabaski Célébrer Lune",
-      "count": 31
-    },
-    {
-      "id": 60,
-      "label": "Coran Femme Faire Celer Habillement",
-      "count": 30
-    },
-    {
-      "id": 85,
-      "label": "Félix Houphouët Konan Bédié Félix Houphouet Action Grâce",
-      "count": 30
-    },
-    {
-      "id": 7,
-      "label": "Tchamba Malèhossou Sokodé Ong",
-      "count": 29
-    },
-    {
-      "id": 27,
-      "label": "Niger Peuple Pays Niger Abdourahamane Ali Mahaman",
-      "count": 29
-    },
-    {
-      "id": 34,
-      "label": "Aeemb Aeemb Cerfi Initier Coran",
-      "count": 29
-    },
-    {
-      "id": 93,
-      "label": "Ablassé Issiaka Cadjèhoun Prêche",
-      "count": 29
-    },
-    {
-      "id": 263,
-      "label": "Frère Soeur Grand Moment Continuer Prier Action Grâce",
-      "count": 29
-    },
-    {
-      "id": 270,
-      "label": "Jeûner Celer Satan Éduquer",
-      "count": 29
-    },
-    {
-      "id": 194,
-      "label": "Congrès Ordinaire Imam El El Hadj Djougou",
-      "count": 28
-    },
-    {
-      "id": 78,
-      "label": "Saint Mosquée Gouvernement Niger Malika Issoufou Banque Islamique",
-      "count": 27
-    },
-    {
-      "id": 250,
-      "label": "Malèhossou Coran Prière Implorer Grâce Venir Prier",
-      "count": 27
-    },
-    {
-      "id": 318,
-      "label": "Mahamane Nigeria Entraide Décentralisation",
-      "count": 27
-    },
-    {
-      "id": 321,
-      "label": "Inoussa Bouraïma République Faure Hadj Inoussa Sénégal",
-      "count": 27
-    },
-    {
-      "id": 9,
-      "label": "Félix Houphouët Ambassade Médine Houphouët",
-      "count": 26
-    },
-    {
-      "id": 89,
-      "label": "Etat Faure Allah Permettre Imam Principal Imam Mosquée",
-      "count": 26
-    },
-    {
-      "id": 223,
-      "label": "Celer Liban Satan Intoxication",
-      "count": 26
+      "count": 210
     },
     {
       "id": 5,
-      "label": "Ablassé Ouédraogo Ouédraogo Blaise Compaoré Aeemb Cerfi",
-      "count": 25
+      "label": "Aboubacar Doukouré - Burkina Faso - Cheick Aboubacar - Burkina",
+      "count": 140
     },
     {
-      "id": 84,
-      "label": "État Faure Libye Lomé Ii Faure",
-      "count": 25
+      "id": 2,
+      "label": "Pèlerin Burkinabè - Burkinabè - Association Islamique - Arabie Saoudite",
+      "count": 138
     },
     {
-      "id": 144,
-      "label": "Jeûner Jour Coran Jeûner Mois Musulman Devoir",
-      "count": 25
+      "id": 1,
+      "label": "Centre Culturel Islamique - Union Musulman Togo - Culturel Islamique - Cadre Musulman",
+      "count": 124
     },
     {
-      "id": 148,
-      "label": "Istanbul Aïr Sultanat Artère",
-      "count": 23
+      "id": 43,
+      "label": "Hadj Cissé Djiguiba - Koudouss - Front Oummat Islamique - Islam Côte Ivoire",
+      "count": 112
     },
     {
-      "id": 173,
-      "label": "Pélérinage Ouagadougou Kadiogo Banque Islamique",
-      "count": 23
+      "id": 125,
+      "label": "Islamique Côte Ivoire - Musulman Côte Ivoire - Venir Côte Ivoire - Koudouss Cni",
+      "count": 102
     },
     {
-      "id": 186,
-      "label": "Bienfaiteur Faire Savoir Cotonou Carême",
-      "count": 23
+      "id": 11,
+      "label": "Ibrahim Ousmane - Cadjèhoun - Aboubakar - Kébir",
+      "count": 100
+    },
+    {
+      "id": 22,
+      "label": "At Islamique - At Islamique Ahmadiyya - Communauté Islamique - Islamique Ahmadiyya Bénin",
+      "count": 91
+    },
+    {
+      "id": 26,
+      "label": "Islamique Côte Ivoire - Musulman Côte Ivoire - Association Musulman - Jeunesse Musulman",
+      "count": 88
+    },
+    {
+      "id": 123,
+      "label": "Don Communauté Musulman - Communauté Musulman - Mamadou - Communauté Musulman Faire",
+      "count": 88
+    },
+    {
+      "id": 62,
+      "label": "Koudouss Koné - National Islamique Cni - Conseil National Islamique - Prophète Mohammed",
+      "count": 87
+    },
+    {
+      "id": 4,
+      "label": "Maître Coranique - École Coranique - Gain Facile - Chômage",
+      "count": 86
+    },
+    {
+      "id": 157,
+      "label": "Koudouss Koné Conseil - Koudouss Cni - Koudouss - Oumma Islamique",
+      "count": 86
+    },
+    {
+      "id": 138,
+      "label": "Mamadou Coulibaly - Mamadou Traoré - Hadj Mamadou - Millier Musulman",
+      "count": 85
+    },
+    {
+      "id": 167,
+      "label": "Mamadou Coulibaly - Agence Musulman Afrique - Mamadou - Ladji Sidibé",
+      "count": 83
+    },
+    {
+      "id": 112,
+      "label": "Agence Musulman Afrique - Agence Musulman - Communauté Musulman - Musulman Togo Hadj",
+      "count": 81
     },
     {
       "id": 3,
-      "label": "Ouhoumoudou Mahamadou Issoufou Mahamadou République Niger Mahamadou",
-      "count": 22
+      "label": "Mamadou Coulibaly - Hadj Mamadou - Mamadou - Lazéni Coulibaly",
+      "count": 79
     },
     {
-      "id": 87,
-      "label": "République Faure Président Faure Nassirou Bako",
-      "count": 22
+      "id": 7,
+      "label": "Général Brigade Abdourahamane - Brigade Abdourahamane Tiani - Grand Mosquée - Abdourahamane Tiani",
+      "count": 78
     },
     {
-      "id": 185,
-      "label": "Prière Musulman Président Eyadéma Officiant Eyadéma",
-      "count": 22
+      "id": 12,
+      "label": "Mohamed Bazoum - Organisation Coopération Islamique - Coopération Islamique - Bazoum",
+      "count": 77
+    },
+    {
+      "id": 14,
+      "label": "Obligatoire Musulman - Jeûne Musulman - Ummah - Messager Allah",
+      "count": 77
+    },
+    {
+      "id": 13,
+      "label": "Province Burkina - Femme Musulman - Formation Islamique - Fille Musulman",
+      "count": 76
+    },
+    {
+      "id": 44,
+      "label": "Afrique Ouest - Responsable Confession Religieux - Lutte Contre Sida - Religieux Coutumier",
+      "count": 76
+    },
+    {
+      "id": 0,
+      "label": "Union Musulman Togo - Centre Culturel Islamique - Dédougou - Culturel Islamique",
+      "count": 75
+    },
+    {
+      "id": 71,
+      "label": "Islamique Burkina Faso - Islamique Burkina - Burkina Faso - Burkina",
+      "count": 75
+    },
+    {
+      "id": 48,
+      "label": "Communauté Musulman Burkina - Grand Mosquée Ouagadougou - Burkinabè - Musulman Burkina",
+      "count": 73
+    },
+    {
+      "id": 86,
+      "label": "National Islamique - Conseil National Islamique - Imam Koné - Religieux Musulman",
+      "count": 73
+    },
+    {
+      "id": 6,
+      "label": "Fête Aïd Kébir - Fidèle Musulman - Bon Musulman - Communauté Musulman",
+      "count": 72
+    },
+    {
+      "id": 21,
+      "label": "Dialogue Interreligieux - Interconfessionnel - Eglise - Pardon Réconciliation",
+      "count": 72
+    },
+    {
+      "id": 9,
+      "label": "Koweït - Mathieu Kérékou - Arabie Saoudite - Banque Islamique Développement",
+      "count": 71
+    },
+    {
+      "id": 15,
+      "label": "Union Islamique - Organisation Société Civil - Union Islamique Bénin - Mardi Janvier",
+      "count": 70
+    },
+    {
+      "id": 60,
+      "label": "Pèlerin Burkinabè - Burkinabè - Lieu Saint Islam - Saint Islam",
+      "count": 70
+    },
+    {
+      "id": 76,
+      "label": "Dialogue Interreligieux - Burkina - Tolérance Religieux - Ouédraogo",
+      "count": 70
+    },
+    {
+      "id": 190,
+      "label": "Mouvement Sunnite Burkina - Sunnite Burkina - Étudiant Musulman Burkina - Musulman Burkina Aeemb",
+      "count": 70
+    },
+    {
+      "id": 42,
+      "label": "Amadou - Hadj Oumarou - Yopougon - Oumarou Kanazoé",
+      "count": 66
+    },
+    {
+      "id": 144,
+      "label": "Abdoulaye Bio Tchané - Prière Musulman - Central Porto Novo - Prière Imam",
+      "count": 65
+    },
+    {
+      "id": 179,
+      "label": "Front Oummat Islamique - Idriss Koudouss Koné - National Islamique Cni - Mamadou Traoré",
+      "count": 65
+    },
+    {
+      "id": 18,
+      "label": "Banque Islamique - Finance Islamique - Banque Islamique Développement - Lutte Contre Pauvreté",
+      "count": 62
+    },
+    {
+      "id": 52,
+      "label": "Armée Gnassingbé Eyadéma - Gnassingbé Eyadéma - Eyadèma - Général Eyadéma",
+      "count": 62
+    },
+    {
+      "id": 61,
+      "label": "Bachirou - Soumanou - Dialogue Interreligieux - Lutte Contre Pauvreté",
+      "count": 62
+    },
+    {
+      "id": 32,
+      "label": "Moutawakil - Communauté Islamique - Soumanou - Imam Mosquée",
+      "count": 60
+    },
+    {
+      "id": 30,
+      "label": "At Islamique Ahmadiyya - At Islamique - Muhammad - Ahmadiyya",
+      "count": 58
+    },
+    {
+      "id": 34,
+      "label": "Raphiou Toukourou - Maouloud Anniversaire - Communauté Musulman Célébrer - Raphiou",
+      "count": 58
+    },
+    {
+      "id": 75,
+      "label": "Islamique Burkina Faso - Association Islamique Burkina - Islamique Burkina - Islamique Burkina Faib",
+      "count": 56
+    },
+    {
+      "id": 101,
+      "label": "Burkinabé - Fidèle Musulman - Prescription Islamique - Instar Musulman Monde",
+      "count": 55
+    },
+    {
+      "id": 126,
+      "label": "Dédougou - Fête Aïd Kébir - Ibrahim Ousmane - Célébrer Fête Tabaski",
+      "count": 55
+    },
+    {
+      "id": 140,
+      "label": "Pilier Islam - Terre Saint Islam - Arabie Saoudite - Pèlerin Béninois",
+      "count": 55
+    },
+    {
+      "id": 224,
+      "label": "Musulman Burkina Faso - Paix Burkina Faso - Fidèle Musulman Burkina - Grand Mosquée Ouagadougou",
+      "count": 55
+    },
+    {
+      "id": 45,
+      "label": "Communauté Musulman - Koné Idriss Koudouss - Conseil National Islamique - Henri Konan Bédié",
+      "count": 54
+    },
+    {
+      "id": 65,
+      "label": "Pélérinage - Sèmè - Justice Social - Chiite",
+      "count": 54
+    },
+    {
+      "id": 16,
+      "label": "At Islamique - At Islamique Ahmadiyya - Mohammad - Islamique Ahmadiyya Bénin",
+      "count": 52
+    },
+    {
+      "id": 25,
+      "label": "Pèlerin Burkinabè - Burkinabè - Arabie Saoudite Burkina - Saoudite Burkina",
+      "count": 52
+    },
+    {
+      "id": 36,
+      "label": "Centre Islamique - Mouhamed - Mettre Fin Cérémonie - Lieu Prière",
+      "count": 52
+    },
+    {
+      "id": 70,
+      "label": "Pèlerin Burkinabè - Burkinabè - Hadj Burkina - Burkinabé",
+      "count": 52
+    },
+    {
+      "id": 89,
+      "label": "Union Musulman Togo - Fambaré Ouattara Natchaba - Musulman Togo Umt - Afrique Ouest",
+      "count": 52
+    },
+    {
+      "id": 99,
+      "label": "Région Burkina - Ahmadiyya Burkina - Burkina - Cours Conférence",
+      "count": 52
+    },
+    {
+      "id": 54,
+      "label": "Général Gnassingbé Eyadèma - Gnassingbé Eyadèma - Gnassingbé Eyadéma - Général Gnassingbé",
+      "count": 51
+    },
+    {
+      "id": 80,
+      "label": "Amadou - Musulman Côte Ivoire - Alassane - Alassane Dramane Ouattara",
+      "count": 51
+    },
+    {
+      "id": 74,
+      "label": "Burkinabè - Burkina Faso - Burkinabé - Burkina",
+      "count": 50
+    },
+    {
+      "id": 181,
+      "label": "Hadj Diaby Moustapha - Pilier Islam - Arabie Saoudite - Houphouët",
+      "count": 50
+    },
+    {
+      "id": 203,
+      "label": "Implorer Bénédiction Allah - Prière Musulman - Gnassingbé Eyadèma - Union Musulman",
+      "count": 50
+    },
+    {
+      "id": 8,
+      "label": "Nord Burkina - Burkinabè - Koffi - Perpétrer",
+      "count": 49
+    },
+    {
+      "id": 217,
+      "label": "Bobo Dioulasso - Dioulasso - Centre Islamique - Islamique Côte Ivoire",
+      "count": 49
+    },
+    {
+      "id": 135,
+      "label": "Imam Communauté Musulman - Ville Parakou - Communauté Musulman Ville - Union Islamique",
+      "count": 48
+    },
+    {
+      "id": 205,
+      "label": "Mamadou Coulibaly - Mamadou - Grand Mosquée Riviera - Fidèle Musulman",
+      "count": 48
+    },
+    {
+      "id": 47,
+      "label": "Religieux Burkina - Burkinabè - Burkina Faso - Lutte Contre Terrorisme",
+      "count": 47
+    },
+    {
+      "id": 69,
+      "label": "Burkina Faso - Ouagadougou - Burkina - Alphabétisation",
+      "count": 47
+    },
+    {
+      "id": 154,
+      "label": "Issoufou Mahamadou - Mahamadou - Coopération Islamique - Coopération Islamique Oci",
+      "count": 47
+    },
+    {
+      "id": 276,
+      "label": "Prière Musulman - Essozimna Gnassingbé - Faure Essozimna Gnassingbé - Office Religieux",
+      "count": 46
+    },
+    {
+      "id": 10,
+      "label": "Union Musulman Togo - Gnassingbé Eyadèma - Union Musulman - Lieu Saint Islam",
+      "count": 45
+    },
+    {
+      "id": 38,
+      "label": "Armée Gnassingbé Eyadéma - Gnassingbé Eyadéma - Armée Gnassingbé - Général Armée Gnassingbé",
+      "count": 45
+    },
+    {
+      "id": 107,
+      "label": "At Islamique Ahmadiyya - At Islamique - Ahmadiyya Bénin - Ahmadiyya",
+      "count": 45
+    },
+    {
+      "id": 117,
+      "label": "Banque Islamique - Banque Islamique Développement - Communauté Musulman Bénin - Yessoufou",
+      "count": 45
+    },
+    {
+      "id": 164,
+      "label": "Pèlerin Burkinabè - Burkinabè - Burkinabè Hadj - Ouagadougou Septembre",
+      "count": 45
+    },
+    {
+      "id": 19,
+      "label": "Population Burkinabè - Islamique Burkina Faib - Association Islamique Burkina - Islamique Burkina",
+      "count": 44
+    },
+    {
+      "id": 33,
+      "label": "Musulman Burkina Aeemb - Étudiant Musulman Burkina - Musulman Burkina - Burkina Aeemb",
+      "count": 44
+    },
+    {
+      "id": 85,
+      "label": "Burkina Faso - Ouagadougou - Burkina - Ouédraogo",
+      "count": 44
+    },
+    {
+      "id": 91,
+      "label": "Musulman Burkina Faso - Communauté Musulman Burkina - Musulman Burkina - Burkina Faso Célébrer",
+      "count": 44
+    },
+    {
+      "id": 128,
+      "label": "Pèlerin Burkinabè - Burkinabè - Ouagadougou Bobo Dioulasso - Ouagadougou Bobo",
+      "count": 44
+    },
+    {
+      "id": 172,
+      "label": "Ville Ouagadougou - Dédougou - Alphabétisation - Bonkoungou",
+      "count": 44
     },
     {
       "id": 220,
-      "label": "Réouverture Mosquée Ouédraogo Coran Hadith Sayouba",
+      "label": "Islamique Burkina Faso - Musulman Burkina Faso - Association Islamique Burkina - Communauté Musulman Burkina",
+      "count": 44
+    },
+    {
+      "id": 255,
+      "label": "Islamique Burkina Faso - Aboubacar Doukouré - Cheick Aboubacar - Ouédraogo",
+      "count": 44
+    },
+    {
+      "id": 173,
+      "label": "Pèlerin Burkinabè - Burkina Faso - Burkina - Ouédraogo",
+      "count": 43
+    },
+    {
+      "id": 31,
+      "label": "Lieu Saint Islam - Pilier Islam - Saint Islam - Accomplir Pilier Islam",
+      "count": 42
+    },
+    {
+      "id": 59,
+      "label": "Communauté Musulman Burkina - Musulman Burkina Faso - Politique Burkina - Musulman Burkina",
+      "count": 42
+    },
+    {
+      "id": 81,
+      "label": "Général Gnassingbé Eyadéma - Gnassingbé Eyadéma - Eyadèma - République Général Gnassingbé",
+      "count": 42
+    },
+    {
+      "id": 93,
+      "label": "Koudouss - Houphouët - Henri Konan Bédié - Félix Houphouët Boigny",
+      "count": 42
+    },
+    {
+      "id": 113,
+      "label": "Amadou - Doumbia - Sidibé - Tidjani",
+      "count": 42
+    },
+    {
+      "id": 121,
+      "label": "Mohammad Saw - Bobo Dioulasso - Prophète Mohammad Saw - Dioulasso",
+      "count": 42
+    },
+    {
+      "id": 141,
+      "label": "Avril Ouagadougou - Peuple Burkinabè - Ouagadougou - Central Cadjèhoun",
+      "count": 42
+    },
+    {
+      "id": 35,
+      "label": "Sunnite Burkina - Mouvement Sunnite Burkina - Soeur Islam - Sayouba",
+      "count": 41
+    },
+    {
+      "id": 40,
+      "label": "Pays Burkina Faso - Musulman Burkina Faso - Pays Burkina - Burkinabè",
+      "count": 41
+    },
+    {
+      "id": 51,
+      "label": "Carême Musulman - Mois Bénir - Entrer Fcfa - Prix Denrée",
+      "count": 41
+    },
+    {
+      "id": 64,
+      "label": "At Islamique - Ahmadiyya Bénin - Islamique Ahmadiyya Bénin - At Islamique Ahmadiyya",
+      "count": 41
+    },
+    {
+      "id": 72,
+      "label": "Mohamed Ali - Banque Islamique Développement - Islamique Développement Bid - Banque Islamique",
+      "count": 41
+    },
+    {
+      "id": 194,
+      "label": "Idriss Koudouss Koné - Koudouss - Koné Idriss Koudouss - Grand Mosquée Adjamé",
+      "count": 41
+    },
+    {
+      "id": 27,
+      "label": "Mosquée Cadjèhoun - Sein Communauté Musulman - Cadjèhoun - Communauté Islamique",
+      "count": 40
+    },
+    {
+      "id": 41,
+      "label": "Femme Musulman - Fille Musulman - Femme Devoir - Femme Homme",
+      "count": 40
+    },
+    {
+      "id": 29,
+      "label": "Issoufou Mahamadou - Mahamadou - Sem Issoufou Mahamadou - Mauritanien",
+      "count": 39
+    },
+    {
+      "id": 49,
+      "label": "Ouagadougou Bobo Dioulasso - Pèlerin Burkinabè - Siméon Sawadogo - Ouagadougou",
+      "count": 39
+    },
+    {
+      "id": 50,
+      "label": "Issoufou Mahamadou - Amadou - Mahamadou - Abdourahamane Tiani",
+      "count": 39
+    },
+    {
+      "id": 56,
+      "label": "Paix Côte Ivoire - Félix Houphouët - Houphouët - Moustapha Diaby",
+      "count": 39
+    },
+    {
+      "id": 84,
+      "label": "Islam Devoir - Agbénonci - Aurélien Agbénonci - Arabie Saoudite",
+      "count": 39
+    },
+    {
+      "id": 116,
+      "label": "Mamadou Coulibaly - Grand Mosquée Riviera - Sacrifice Musulman - Fidèle Musulman",
+      "count": 39
+    },
+    {
+      "id": 170,
+      "label": "Burkina Faso - Islam Musulman - État Islamique - Lundi Février",
+      "count": 39
+    },
+    {
+      "id": 185,
+      "label": "Fidèle Musulman - Fidèle Musulman Devoir - Jeûne Musulman - Central Cadjèhoun",
+      "count": 39
+    },
+    {
+      "id": 23,
+      "label": "Banque Islamique Développement - Banque Islamique - Islamique Développement Bid - Koweïtien",
+      "count": 38
+    },
+    {
+      "id": 24,
+      "label": "Islamique Burkina - Islamique Burkina Faib - Burkinabè - Association Islamique Burkina",
+      "count": 38
+    },
+    {
+      "id": 46,
+      "label": "St Coran - Révéler Coran - Exégète - Mouhammad",
+      "count": 38
+    },
+    {
+      "id": 82,
+      "label": "Supérieur Islamique Csi - Supérieur Islamique - Affaire Islamique - Hadj Diaby Moustapha",
+      "count": 38
+    },
+    {
+      "id": 87,
+      "label": "Autorité Burkinabè - Arabie Saoudite Burkina - Entrer Burkina - Saoudite Burkina",
+      "count": 38
+    },
+    {
+      "id": 92,
+      "label": "Diaby Koweit - Koudouss Cni - Imam Côte Ivoire - Anzoumana Konaté",
+      "count": 38
+    },
+    {
+      "id": 158,
+      "label": "Paix Côte Ivoire - Imam Côte Ivoire - Imam Sékou Sylla - Sékou Sylla",
+      "count": 38
+    },
+    {
+      "id": 187,
+      "label": "Venir Côte Ivoire - Musulman Côte Ivoire - Mali Sénégal - Aboubacar Fofana",
+      "count": 38
+    },
+    {
+      "id": 320,
+      "label": "Union Musulman Togo - Pays Paix Sécurité - Paix Togo - Prière Musulman",
+      "count": 38
+    },
+    {
+      "id": 340,
+      "label": "Dédougou - Diriger Grand Imam - Fidèle Musulman - Fête Aïd Fitr",
+      "count": 38
+    },
+    {
+      "id": 37,
+      "label": "Musulman Burkina Faso - Bénir Burkina Faso - Dieu Bénir Burkina - Bénir Burkina",
+      "count": 37
+    },
+    {
+      "id": 39,
+      "label": "Sécurité Burkinabè - Capitale Burkinabè - Burkinabè - Burkina Faso",
+      "count": 37
+    },
+    {
+      "id": 153,
+      "label": "Pays Côte Ivoire - Yamoussoukro - Houphouët - Alassane",
+      "count": 37
+    },
+    {
+      "id": 247,
+      "label": "Responsable Association Islamique - Mahamadou - Mohamed Bazoum - Association Islamique",
+      "count": 37
+    },
+    {
+      "id": 256,
+      "label": "Abdoul Aziz - Houphouet - Abdoul - Hadj Boubacar",
+      "count": 37
+    },
+    {
+      "id": 258,
+      "label": "Province Burkina - Étudiant Musulman Burkina - Musulman Burkina - Burkina",
+      "count": 37
+    },
+    {
+      "id": 143,
+      "label": "Association Islamique Burkina - Fédération Association Islamique - Association Islamique - Formation Islamique",
+      "count": 36
+    },
+    {
+      "id": 168,
+      "label": "Jeûne Musulman - Ramadan Musulman - Muhammad - Prophète Muhammad",
+      "count": 36
+    },
+    {
+      "id": 272,
+      "label": "Célébration Aïd Kébir - Communauté Musulman Région - Aïd Kébir - Daloa",
+      "count": 36
+    },
+    {
+      "id": 66,
+      "label": "Houngbédji - Union Islamique - Union Islamique Bénin - Islamique Bénin Uib",
+      "count": 35
+    },
+    {
+      "id": 88,
+      "label": "Mois Devoir - Abstenir Manger Boire - Musulman Devoir - Conseil Imam",
+      "count": 35
+    },
+    {
+      "id": 90,
+      "label": "Général Brigade Abdourahamane - Brigade Abdourahamane Tiani - Abdourahamane Tiani - Brigade Abdourahamane",
+      "count": 35
+    },
+    {
+      "id": 96,
+      "label": "Issoufou Mahamadou - Peuple Nigérien - Mois Bénir Ramadan - Fête Aïd Fitr",
+      "count": 35
+    },
+    {
+      "id": 102,
+      "label": "Grand Mosquée Adjamé - Musulman Côte Ivoire - Ibrahima - Diaby Moustapha",
+      "count": 35
+    },
+    {
+      "id": 161,
+      "label": "Koudouss Koné - Idriss Koudouss Koné - Ibrahim Ousmane - Korhogo",
+      "count": 35
+    },
+    {
+      "id": 235,
+      "label": "Saoudite Burkina Faso - Arabie Saoudite Burkina - Burkina Faso - Sunnite Burkina",
+      "count": 35
+    },
+    {
+      "id": 68,
+      "label": "Musulman Burkina Faso - Association Islamique Burkina - Communauté Musulman Burkina - Islamique Burkina",
+      "count": 34
+    },
+    {
+      "id": 110,
+      "label": "Prophète Mahomet - Naissance Prophète Mahomet - Muhammad - Côte Ivoire Célébrer",
+      "count": 34
+    },
+    {
+      "id": 242,
+      "label": "Islamique Burkina - Bande Sahélo Saharien - Burkina - Août Ouagadougou",
+      "count": 34
+    },
+    {
+      "id": 316,
+      "label": "Union Musulman Togo - Organisation Conférence Islamique - Conférence Islamique - Centre Islamique",
+      "count": 34
+    },
+    {
+      "id": 318,
+      "label": "Communauté Musulman Burkina - Etat Burkinabè - Burkinabè - Burkina",
+      "count": 34
+    },
+    {
+      "id": 338,
+      "label": "Peuple Burkinabè - Fidèle Musulman - Koudougou - Grand Imam",
+      "count": 34
+    },
+    {
+      "id": 67,
+      "label": "Ibrahim Ousmane - Imam Mosquée - Communauté Musulman - Fidèle Musulman",
+      "count": 33
+    },
+    {
+      "id": 127,
+      "label": "Sèmè - Famille Musulman - Fête Tabaski - Musulman Célébrer Fête",
+      "count": 33
+    },
+    {
+      "id": 131,
+      "label": "Association Islamique Burkina - Islamique Burkina Faib - Islamique Burkina - Burkinabè",
+      "count": 33
+    },
+    {
+      "id": 20,
+      "label": "Association Islamique - Association Islamique Niger - Homme Devoir - Femme Devoir",
+      "count": 32
+    },
+    {
+      "id": 73,
+      "label": "Lieu Saint Islam - Saint Islam - Pèlerinage Devoir - Pèlerin Devoir",
+      "count": 32
+    },
+    {
+      "id": 145,
+      "label": "Union Islamique - Union Islamique Bénin - Central Cadjèhoun - Communauté Musulman Bénin",
+      "count": 32
+    },
+    {
+      "id": 83,
+      "label": "Cadjèhoun - Fcfa - Jour Début - Ravitailler",
+      "count": 31
+    },
+    {
+      "id": 94,
+      "label": "National Islamique - Promotion Islam - Festivité - Grand Mosquée Riviera",
+      "count": 31
+    },
+    {
+      "id": 151,
+      "label": "Communauté Musulman - Union Musulman - Adjoint Imam - Imam Abdoulaye",
+      "count": 31
+    },
+    {
+      "id": 204,
+      "label": "Houphouët - Henri Konan Bédié - Houphouët Boigny - Félix Houphouët",
+      "count": 31
+    },
+    {
+      "id": 100,
+      "label": "Communauté Musulman - Mohamed - Mustapha - Libye",
+      "count": 30
+    },
+    {
+      "id": 114,
+      "label": "Fidèle Musulman Côte - Pilier Islam - Prophète Mohammed - Profession Foi Prière",
+      "count": 30
+    },
+    {
+      "id": 132,
+      "label": "Musulman Burkina Faso - Fête Communauté Musulman - Musulman Burkina - Soeur Musulman",
+      "count": 30
+    },
+    {
+      "id": 232,
+      "label": "At Islamique - Conseil Islamique - Organisation Musulman - Fête Musulman",
+      "count": 30
+    },
+    {
+      "id": 296,
+      "label": "République Populaire Bénin - Salle Conférence - Coopération Bilatéral - Affaire Etrangère Coopération",
+      "count": 30
+    },
+    {
+      "id": 303,
+      "label": "Pèlerin Burkinabè - Hadj Burkina - Burkinabè - Burkinabè Hadj",
+      "count": 30
+    },
+    {
+      "id": 108,
+      "label": "Atteindre Piété - Zakat Fitr - Femme Enceint - Prière Nuit",
+      "count": 29
+    },
+    {
+      "id": 146,
+      "label": "Essozimna Gnassingbé - Faure Essozimna Gnassingbé - Communauté Musulman Togo - Union Musulman Togo",
+      "count": 29
+    },
+    {
+      "id": 218,
+      "label": "Région Burkina - Burkina Faso - Acte Terroriste - Simon Compaoré",
+      "count": 29
+    },
+    {
+      "id": 266,
+      "label": "At Islamique Ahmadiyya - At Islamique - Islamique Ahmadiyya - Parakou",
+      "count": 29
+    },
+    {
+      "id": 332,
+      "label": "Musulman Burkina Faso - Musulman Devoir - Homme Devoir - Kadiogo",
+      "count": 29
+    },
+    {
+      "id": 17,
+      "label": "Kébir - Fête Maouloud - Tabaski Fête Mouton - Fête Tabaski Célébrer",
+      "count": 28
+    },
+    {
+      "id": 28,
+      "label": "Communauté Musulman - Grand Imam - Burkinabè - Burkina",
+      "count": 28
+    },
+    {
+      "id": 103,
+      "label": "Gnassingbé Eyadéma - Armée Gnassingbé Eyadéma - Amadou - Dioulasso",
+      "count": 28
+    },
+    {
+      "id": 104,
+      "label": "Sunnite Burkina - Mouvement Sunnite Burkina - Ouagadougou - Secteur Ouagadougou",
+      "count": 28
+    },
+    {
+      "id": 149,
+      "label": "Mosquée Cadjèhoun - Communauté Musulman - Faire Communauté Musulman - Cadjèhoun",
+      "count": 28
+    },
+    {
+      "id": 155,
+      "label": "Musulman Côte Ivoire - Cote Ivoire - Bouaké - Valeur Islamique",
+      "count": 28
+    },
+    {
+      "id": 159,
+      "label": "Calendrier Musulman - Aïd Kebir - Ibrahim Abraham - Prophète Ibrahim",
+      "count": 28
+    },
+    {
+      "id": 163,
+      "label": "Musulman Burkina - Grand Mosquée Ouagadougou - Ouagadougou - Koudougou",
+      "count": 28
+    },
+    {
+      "id": 223,
+      "label": "Dieu Bénir Burkina - Burkina Faso - Pays Musulman - Extrémisme",
+      "count": 28
+    },
+    {
+      "id": 259,
+      "label": "Sénégal Mali - Côté Musulman - Chrétien Musulman - Balla Kéita",
+      "count": 28
+    },
+    {
+      "id": 304,
+      "label": "Issoufou Mahamadou - Ouhoumoudou Mahamadou - Organisation Coopération Islamique - Mahamadou",
+      "count": 28
+    },
+    {
+      "id": 77,
+      "label": "Côte Ivoire - Royaume Arabie Saoudite - Diarrassouba - Arabie Saoudite",
+      "count": 27
+    },
+    {
+      "id": 105,
+      "label": "Imam Aboubacar Fofana - Grand Mosquée Lomé - Alphabétisation - Doumbia",
+      "count": 27
+    },
+    {
+      "id": 106,
+      "label": "Union Musulman Togo - Faure Essozimna Gnassingbé - Essozimna Gnassingbé - Nom Communauté Musulman",
+      "count": 27
+    },
+    {
+      "id": 119,
+      "label": "Communauté Islamique Ahmadiyya - Monde Musulman - Contre Islam - Communauté Islamique",
+      "count": 27
+    },
+    {
+      "id": 129,
+      "label": "Banque Islamique - Mahamadou - Banque Islamique Développement - Région Niamey",
+      "count": 27
+    },
+    {
+      "id": 248,
+      "label": "Issoufou Mahamadou - Mahamadou - Seini Seydou - Conseil Sécurité",
+      "count": 27
+    },
+    {
+      "id": 78,
+      "label": "Fête Aïd Kébir - Fidèle Musulman - Aid Kébir - Aïd Kébir",
+      "count": 26
+    },
+    {
+      "id": 98,
+      "label": "Mamadou Coulibaly - Mamadou Coulibaly Conseil - Hadj Mamadou - Musulman Côte Ivoire",
+      "count": 26
+    },
+    {
+      "id": 182,
+      "label": "Mosquée Cadjèhoun - Communauté Musulman - Fidèle Musulman - Abdoul Karim",
+      "count": 26
+    },
+    {
+      "id": 188,
+      "label": "Union Musulman Togo - Naissance Prophète Mahomet - Kébir Tabaski - Aboubakar",
+      "count": 26
+    },
+    {
+      "id": 189,
+      "label": "Communauté Musulman Togo - Général Gnassingbé Eyadèma - Armée Gnassingbé Eyadéma - Union Musulman Togo",
+      "count": 26
+    },
+    {
+      "id": 191,
+      "label": "Société Burkinabè - Musulman Burkina Aeemb - Fidèle Musulman Burkina - Musulman Burkina",
+      "count": 26
+    },
+    {
+      "id": 206,
+      "label": "Union Musulman - Union Musulman Togo - Musulman Togo Umt - Général Eyadéma",
+      "count": 26
+    },
+    {
+      "id": 229,
+      "label": "Bobo Dioulasso - Dioulasso - Loi Islamique - Kébir Communément Appeler",
+      "count": 26
+    },
+    {
+      "id": 231,
+      "label": "Burkinabè - Comportement Musulman - Religion Musulman - Ville Ouagadougou",
+      "count": 26
+    },
+    {
+      "id": 239,
+      "label": "Gnassingbé Eyadéma - République Général Gnassingbé - Général Gnassingbé - Gnassingbé",
+      "count": 26
+    },
+    {
+      "id": 243,
+      "label": "Peuple Béninois - Mathieu Kérékou - État Devoir - Symposium",
+      "count": 26
+    },
+    {
+      "id": 254,
+      "label": "Burkina Faso - Communauté Musulman Burkina - Grand Mosquée Ouagadougou - Musulman Burkina",
+      "count": 26
+    },
+    {
+      "id": 282,
+      "label": "Général Gnassingbé Eyadéma - Armée Gnassingbé Eyadéma - Gnassingbé Eyadéma - Aboudou",
+      "count": 26
+    },
+    {
+      "id": 53,
+      "label": "Tahoua - Ouedraogo - Million Fcfa - Montant Million",
+      "count": 25
+    },
+    {
+      "id": 97,
+      "label": "Hadj Mamadou - Mamadou - Arabie Saoudite - Arabie Saoudite Pèlerin",
+      "count": 25
+    },
+    {
+      "id": 109,
+      "label": "Musulman Burkina Faso - Burkinabè - Burkina Faso Célébrer - Burkina Faso",
+      "count": 25
+    },
+    {
+      "id": 111,
+      "label": "Saoudite Burkina Faso - Entrer Burkina Faso - Gouvernement Burkinabè - Entrer Burkina",
+      "count": 25
+    },
+    {
+      "id": 120,
+      "label": "Ouhoumoudou Mahamadou - Mahamadou - Mohamed Bazoum - Bazoum",
+      "count": 25
+    },
+    {
+      "id": 137,
+      "label": "Yessoufou - Jeudi Janvier - Haut Dignitaire - Soeur Frère",
+      "count": 25
+    },
+    {
+      "id": 176,
+      "label": "Association Jeune Musulman - Agoè - Centre Islamique - Saisir Occasion Remercier",
+      "count": 25
+    },
+    {
+      "id": 228,
+      "label": "Prophète Mohammed - Religion Prophète - Mohammed - Révéler Prophète",
+      "count": 25
+    },
+    {
+      "id": 230,
+      "label": "Ville Parakou - Yayi - Thomas Sankara - Situation Devoir",
+      "count": 25
+    },
+    {
+      "id": 58,
+      "label": "Association Islamique Burkina - Islamique Burkina - Gouvernement Burkinabè - Islamique Burkina Faib",
+      "count": 24
+    },
+    {
+      "id": 63,
+      "label": "Agence Musulman Afrique - Région Savane - Musulman Afrique Ama - Fatimata",
+      "count": 24
+    },
+    {
+      "id": 118,
+      "label": "Islam Coran - Ouagadougou - Lieu Lundi - Savoir Coran",
+      "count": 24
+    },
+    {
+      "id": 124,
+      "label": "Anzoumana - Anzoumana Konaté - Hadj Diaby Moustapha - Musulman Côte Ivoire",
+      "count": 24
+    },
+    {
+      "id": 130,
+      "label": "Burkina Faso Niger - Prophète Ibrahim - Jour Fête - Mouton Fête",
+      "count": 24
+    },
+    {
+      "id": 136,
+      "label": "Musulman Burkina Aeemb - Étudiant Musulman Burkina - Musulman Burkina - Burkina Aeemb",
+      "count": 24
+    },
+    {
+      "id": 147,
+      "label": "Ligue Islamique Mondial - Ligue Islamique - Togo Bénin - Montant Fcfa",
+      "count": 24
+    },
+    {
+      "id": 193,
+      "label": "Burkina Faso - Burkinabè - Burkina - Bande Sahélo Saharien",
+      "count": 24
+    },
+    {
+      "id": 195,
+      "label": "Union Islamique Bénin - Communauté Musulman - Fidèle Musulman - Pilier Islam",
+      "count": 24
+    },
+    {
+      "id": 207,
+      "label": "Union Musulman Togo - Imam Communauté Musulman - Union Musulman - Communauté Musulman",
+      "count": 24
+    },
+    {
+      "id": 212,
+      "label": "Grand Imam Ouagadougou - Imam Ouagadougou - Ouagadougou - Burkinabè",
+      "count": 24
+    },
+    {
+      "id": 264,
+      "label": "Islamique Burkina Faso - Association Islamique Burkina - Burkinabè - Islamique Burkina",
+      "count": 24
+    },
+    {
+      "id": 275,
+      "label": "Musulman Côte Ivoire - Yopougon - Imam Koudouss - Koudouss",
+      "count": 24
+    },
+    {
+      "id": 325,
+      "label": "Burkina Faso Cmbf - Ibrahim Ousmane - Naissance Prophète Mahomet - Ange Djibril",
+      "count": 24
+    },
+    {
+      "id": 55,
+      "label": "Islamique Burkina Faib - Pays Burkina Faso - Pays Burkina - Islamique Burkina",
+      "count": 23
+    },
+    {
+      "id": 150,
+      "label": "Aïd Kébir - Fête Aïd Kebir - Aïd Kebir - Musulman Monde Entier",
+      "count": 23
+    },
+    {
+      "id": 180,
+      "label": "Prophète Mohamed - Nom Islam - Union Islamique - Entrer Musulman",
+      "count": 23
+    },
+    {
+      "id": 234,
+      "label": "Moustapha Koweit - Moustapha Diaby - Diaby Koweit - Diaby Moustapha",
+      "count": 23
+    },
+    {
+      "id": 257,
+      "label": "Koudougou - Félix Houphouët Boigny - Gaoua - Houphouët Boigny",
+      "count": 23
+    },
+    {
+      "id": 171,
+      "label": "Etat Boni Yayi - Cadjèhoun - Boni Yayi - Pèlerin Béninois",
+      "count": 22
+    },
+    {
+      "id": 233,
+      "label": "Lecture Saint Coran - Prophète Mohammad - Révéler Coran - Saint Coran",
+      "count": 22
+    },
+    {
+      "id": 238,
+      "label": "Islamique Burkina Faib - Islamique Burkina - Association Islamique Burkina - Burkina Faso",
+      "count": 22
+    },
+    {
+      "id": 245,
+      "label": "National Burkina - Cameroun - Amoussou - Boni Yayi",
+      "count": 22
+    },
+    {
+      "id": 252,
+      "label": "Faire Jeûne - Pouvoir Jeûner - Début Jeûne - Observer Jeûne",
+      "count": 22
+    },
+    {
+      "id": 262,
+      "label": "Abdoul Karim - Ville Niamey - Imam Abdoulaye - Fête Musulman",
+      "count": 22
+    },
+    {
+      "id": 265,
+      "label": "Ahmadiyya Burkina - Mahmood Nasir - Burkina - Koudougou",
+      "count": 22
+    },
+    {
+      "id": 270,
+      "label": "Central Cadjèhoun - Jeûne Musulman - Cadjèhoun - Bon Musulman",
+      "count": 22
+    },
+    {
+      "id": 271,
+      "label": "Etat Faure Gnassingbé - Faure Gnassingbé - Prière Musulman - Aïd Kébir",
       "count": 22
     },
     {
       "id": 274,
-      "label": "Frère Soeur Salut Luire Souleymane Compaoré Burkina Faso",
+      "label": "Gnassingbé Eyadèma - Agence Musulman Afrique - Agence Musulman - Lecture Saint Coran",
       "count": 22
     },
     {
-      "id": 289,
-      "label": "Simon Compaoré Ouédraogo Chef Coutumier Sanou",
+      "id": 279,
+      "label": "Hadj Idriss Koudouss - Pays Africain - Égypte - Prise Conscience",
       "count": 22
     },
     {
-      "id": 4,
-      "label": "Musulman Prier Hadj Vassiriki Abdoulaye Koné Diaby Moustapha",
+      "id": 294,
+      "label": "Amadou - Mahamane - Guinée Conakry - Conakry",
+      "count": 22
+    },
+    {
+      "id": 298,
+      "label": "Région Niamey - Leader Musulman - Finance Islamique - Mondial Islamique",
+      "count": 22
+    },
+    {
+      "id": 160,
+      "label": "Burkina Faso - Burkinabè - Bobo Dioulasso - Burkina",
       "count": 21
     },
     {
-      "id": 202,
-      "label": "Celer Passer Cmbf Coran Femme Devoir",
+      "id": 210,
+      "label": "Saliou - Agbénonci - Étranger Coopération - Aurélien Agbénonci",
       "count": 21
+    },
+    {
+      "id": 221,
+      "label": "Association Islamique Burkina - Communauté Musulman Burkina - Musulman Burkina Faso - Islamique Burkina",
+      "count": 21
+    },
+    {
+      "id": 227,
+      "label": "Islamique Burkina Faso - Économique Burkina - Islamique Burkina - Burkina Faso",
+      "count": 21
+    },
+    {
+      "id": 249,
+      "label": "Amadou - Sem Issoufou Mahamadou - Mahamadou - Général Brigade Abdourahamane",
+      "count": 21
+    },
+    {
+      "id": 300,
+      "label": "Fidèle Musulman Devoir - Grand Prière - Séance Prière - Prière Ramadan",
+      "count": 21
+    },
+    {
+      "id": 321,
+      "label": "Lutte Contre Sida - Contre Sida - Leader Religieux - Information Sensibilisation",
+      "count": 21
+    },
+    {
+      "id": 57,
+      "label": "Septentrional - Afrique Ouest - Extrémisme Violent - Extrémisme",
+      "count": 20
+    },
+    {
+      "id": 79,
+      "label": "Burkinabè - Burkina Faso - Dédougou - Burkina",
+      "count": 20
+    },
+    {
+      "id": 115,
+      "label": "Gnassingbé Eyadèma - Prière Musulman - Faure Essozimna Gnassingbé - Essozimna Gnassingbé",
+      "count": 20
+    },
+    {
+      "id": 169,
+      "label": "Nation Ouagadougou - Place Nation Ouagadougou - Tradition Musulman - Sèmè",
+      "count": 20
+    },
+    {
+      "id": 208,
+      "label": "Membre Communauté Musulman - Fidèle Musulman - Aïd Kebir Fête - Aïd Kebir",
+      "count": 20
+    },
+    {
+      "id": 222,
+      "label": "Grand Mosquée Ouagadougou - Communauté Musulman Burkina - Musulman Burkina Faso - Burkina Faso",
+      "count": 20
+    },
+    {
+      "id": 225,
+      "label": "Association Islamique Burkina - Islamique Burkina - Ahmadiyya Burkina - Islamique Burkina Faib",
+      "count": 20
+    },
+    {
+      "id": 307,
+      "label": "Musulman Burkina Faso - Communauté Musulman Burkina - Fidèle Musulman Burkina - Burkina Faso",
+      "count": 20
+    },
+    {
+      "id": 323,
+      "label": "Communauté Musulman Monde - Fête Aïd Kebir - Nikiema - Aïd Kebir",
+      "count": 20
+    },
+    {
+      "id": 139,
+      "label": "Burkina Faso - Burkina - Ensemble Communauté Musulman - Chrétien Musulman",
+      "count": 19
+    },
+    {
+      "id": 142,
+      "label": "Arabie Saoudite - Organiser Pèlerinage - Musulman Participer - Hospitaliser",
+      "count": 19
+    },
+    {
+      "id": 166,
+      "label": "Burkina Faso - Burkina - Ouédraogo - Leader Religieux Coutumier",
+      "count": 19
+    },
+    {
+      "id": 178,
+      "label": "Général Gnassingbé Eyadéma - Gnassingbé Eyadéma - Fambaré Ouattara Natchaba - Agoè",
+      "count": 19
+    },
+    {
+      "id": 183,
+      "label": "Entrer Burkina - Burkinabè - Burkina Faso - Organisation Conférence Islamique",
+      "count": 19
+    },
+    {
+      "id": 196,
+      "label": "Endroit Musulman - Confession Musulman - Jeûne Musulman - Yacouba",
+      "count": 19
+    },
+    {
+      "id": 197,
+      "label": "Yamoussoukro - Abidjan - Parent Devoir - Pèlerinage Pilier Islam",
+      "count": 19
+    },
+    {
+      "id": 214,
+      "label": "Grand Imam - Dialogue Interreligieux - Lutte Contre Extrémisme - Contre Extrémisme",
+      "count": 19
+    },
+    {
+      "id": 216,
+      "label": "Aboubakar - Bachirou - Yessoufou - Union Islamique Bénin",
+      "count": 19
+    },
+    {
+      "id": 263,
+      "label": "Communauté Musulman - Communauté Musulman Côte - Paix Côte Ivoire - Hadj Aboubacar Fofana",
+      "count": 19
+    },
+    {
+      "id": 268,
+      "label": "Burkina Faso Souhaiter - Ouagadougou - Ville Ouagadougou - Fête Aïd Kébir",
+      "count": 19
+    },
+    {
+      "id": 273,
+      "label": "Faure Essozimna Gnassingbé - État Faure Essozimna - Essozimna Gnassingbé - Faure Essozimna",
+      "count": 19
+    },
+    {
+      "id": 310,
+      "label": "Kébir Fête Tabaski - Kébir Fête - Fête Aïd Kébir - Fête Aïd",
+      "count": 19
+    },
+    {
+      "id": 312,
+      "label": "Général Gnassingbé Eyadéma - Aumônier - Prière Musulman - Imam Idrissou",
+      "count": 19
+    },
+    {
+      "id": 152,
+      "label": "Communauté Musulman - Union Islamique - Sein Communauté Musulman - Fidèle Musulman Mosquée",
+      "count": 18
+    },
+    {
+      "id": 165,
+      "label": "Mamadou Coulibaly - Communauté Musulman - Hadj Mamadou - Mamadou",
+      "count": 18
     },
     {
       "id": 261,
-      "label": "Perpétrer Mali Burkina Situation Sécuritaire Pays Sahel",
-      "count": 21
-    },
-    {
-      "id": 6,
-      "label": "Ousmane Imam Mosquée Sacrifier Tradition Coran",
-      "count": 20
-    },
-    {
-      "id": 21,
-      "label": "Cotonou Adonner Aumône Mendier",
-      "count": 20
-    },
-    {
-      "id": 23,
-      "label": "Pouvoir Effectuer Bien Passer Ouagadougou International Ouagadougou",
-      "count": 20
-    },
-    {
-      "id": 103,
-      "label": "Etat Major Insurrection Insécurité Malien",
-      "count": 20
-    },
-    {
-      "id": 124,
-      "label": "Jihad Prêcheur Prêche Intolérance",
-      "count": 20
-    },
-    {
-      "id": 322,
-      "label": "Conférence Islamique Lomé Bonfoh Ailleurs Faire",
-      "count": 20
-    },
-    {
-      "id": 32,
-      "label": "Diaby Moustapha National Islamique Supérieur Islamique Supérieur Imam",
-      "count": 19
-    },
-    {
-      "id": 38,
-      "label": "Salut Luire Ramatoulaye Ouédraogo Coran",
-      "count": 19
-    },
-    {
-      "id": 125,
-      "label": "Insécurité Malien Fd Mali",
-      "count": 19
-    },
-    {
-      "id": 213,
-      "label": "Luire Pouvoir Diakité Balla Parrainer",
-      "count": 19
-    },
-    {
-      "id": 271,
-      "label": "Mois Sacrer Hadj Vassiriki Abdoulaye Koné Houphouët",
-      "count": 19
-    },
-    {
-      "id": 278,
-      "label": "Entrer Niger Abdourahamane Sauvegarde Patrie Brigade Abdourahamane",
-      "count": 19
-    },
-    {
-      "id": 11,
-      "label": "Abdourahamane Tiani Issoufou Mahamadou Tahirou Abdourahamane",
+      "label": "Koudous - Imam Koudouss - Koudouss - Idriss Koudouss Cni",
       "count": 18
     },
     {
-      "id": 58,
-      "label": "Aeemb Initier Elève Civisme",
+      "id": 287,
+      "label": "Raphiou Toukourou - Sacrifice Musulman - Aid Kebir - Aïd Al Adha",
       "count": 18
     },
     {
-      "id": 119,
-      "label": "Hadj Oumra Saint Islam Décentralisation Préparatif",
+      "id": 302,
+      "label": "Principe Laïcité - Etat Laïc - Dimension Spirituel - Confession Religieux",
       "count": 18
     },
     {
-      "id": 314,
-      "label": "Bienfaiteur Mosquée Faire Coran Bienfaisance",
+      "id": 333,
+      "label": "Abdoulaye Bio Tchané - Abdoulaye - Abdoulaye Bio - Banque Islamique",
       "count": 18
     },
     {
-      "id": 92,
-      "label": "Dabiré Etat Prendre Ouédraogo Décentralisation",
+      "id": 148,
+      "label": "Seini Seydou - Affaire Etrangère Coopération - Tahoua - Seydou",
       "count": 17
     },
     {
-      "id": 203,
-      "label": "Gouvernement Niger Ilboudo Istanbul Préjugé",
+      "id": 162,
+      "label": "Issoufou Mahamadou - Etat Issoufou Mahamadou - Mahamadou - République Islamique",
       "count": 17
     },
     {
-      "id": 228,
-      "label": "Imam Mosquée Sermon Imam Kébir Fête Mohammed",
+      "id": 186,
+      "label": "Général Gnassingbé Eyadéma - Gnassingbé Eyadéma - Aumônier - Général Gnassingbé",
       "count": 17
     },
     {
-      "id": 255,
-      "label": "Hadj Koné Imam Cosim Prophète Mohammad Diakité",
+      "id": 198,
+      "label": "Hadj Diaby Moustapha - Supérieur Islamique - National Islamique - Communauté Musulman",
       "count": 17
     },
     {
-      "id": 293,
-      "label": "Mois Sacrer Saint Mosquée Saint Islam Monde Musulman",
+      "id": 246,
+      "label": "Islamique Burkina - Burkina - Communauté Islamique - Côte Ivoire",
       "count": 17
     },
     {
-      "id": 305,
-      "label": "Hadj Inoussa Amadou Inoussa Bouraïma Hadj Ahmed",
+      "id": 267,
+      "label": "Général Gnassingbé Eyadéma - Gnassingbé Eyadéma - Essozimna Gnassingbé - Faure Essozimna Gnassingbé",
       "count": 17
     },
     {
-      "id": 14,
-      "label": "Union Islamique Strict Respect Fidèle Devoir Religieux Devoir",
-      "count": 16
+      "id": 283,
+      "label": "Présidence Faso - Cadre Commémoration - Grand Chancelier Ordre - Nigérien",
+      "count": 17
     },
     {
-      "id": 73,
-      "label": "Insécurité Barkhane Celer Mali",
+      "id": 289,
+      "label": "Pilier Islam - Divin Musulman - Messager Allah - Autour Kaaba",
+      "count": 17
+    },
+    {
+      "id": 327,
+      "label": "Bénin Burkina Faso - Bénin Burkina - Agence Musulman Afrique - Centre Culturel Islamique",
+      "count": 17
+    },
+    {
+      "id": 95,
+      "label": "Pays Musulman - Faure Essozimna Gnassingbé - Communauté Musulman Monde - Essozimna Gnassingbé",
       "count": 16
     },
     {
       "id": 134,
-      "label": "Solennel Allouer Civisme Incivisme",
+      "label": "Ville Niamey - Potentialité - User - Lac",
       "count": 16
     },
     {
-      "id": 217,
-      "label": "Aeemb Allah Accorder Madame Monsieur Coran",
+      "id": 175,
+      "label": "Burkina Faso Pouvoir - Mécréant - Israël - Pays Musulman",
       "count": 16
     },
     {
-      "id": 290,
-      "label": "Décerner Timonier Etat Major Décéder",
+      "id": 199,
+      "label": "Balla Kéita - Adorer Allah - Allah Allah - Miséricordieux",
       "count": 16
-    },
-    {
-      "id": 16,
-      "label": "Coutumier Religieux Blaise Compaoré Luc Adolphe Coutumier",
-      "count": 15
-    },
-    {
-      "id": 71,
-      "label": "Coutumier Ancêtre Frère Soeur Mendicité",
-      "count": 15
-    },
-    {
-      "id": 79,
-      "label": "Imam Grand Ouédraogo Ouagadougou El Dialogue Interreligieux",
-      "count": 15
-    },
-    {
-      "id": 178,
-      "label": "Nassirou Entente Entrer Plénipotentiaire Coopération Entrer",
-      "count": 15
-    },
-    {
-      "id": 181,
-      "label": "Formation Islamique Aeemb Précepte Islam Supérieur Islamique",
-      "count": 15
-    },
-    {
-      "id": 218,
-      "label": "Salut Luire Amour Dieu Prophète Mouhammad Sacrifier Tradition",
-      "count": 15
-    },
-    {
-      "id": 230,
-      "label": "Ousmane Exaucer Imam Mosquée Cotonou",
-      "count": 15
-    },
-    {
-      "id": 307,
-      "label": "Officiant Eyadèma Président Eyadèma Oecuménique",
-      "count": 15
-    },
-    {
-      "id": 2,
-      "label": "Bienfaisance Farooq Ahmad Exprimer Gratitude Farooq",
-      "count": 14
-    },
-    {
-      "id": 10,
-      "label": "République Faure National Hadj Musulman Togo Pilier Islam",
-      "count": 14
-    },
-    {
-      "id": 13,
-      "label": "Inauguration Mosquée Afrique Ama Construction Mosquée Fidèle Mosquée",
-      "count": 14
-    },
-    {
-      "id": 15,
-      "label": "Prière Musulman Union Musulman Prière Intercession Président Eyadéma",
-      "count": 14
-    },
-    {
-      "id": 39,
-      "label": "Cotonou Convoyage Mecque Rite",
-      "count": 14
-    },
-    {
-      "id": 42,
-      "label": "Agoè Burkina Faso Dialogue Interreligieux Interreligieux",
-      "count": 14
-    },
-    {
-      "id": 55,
-      "label": "Mecque Accomplir Hadj Oumra Ismaël Médine",
-      "count": 14
-    },
-    {
-      "id": 64,
-      "label": "Afrique Ama Boureima Ousmane Umt El",
-      "count": 14
-    },
-    {
-      "id": 66,
-      "label": "Issiaka Sacrifier Tradition Bélier Affluence",
-      "count": 14
-    },
-    {
-      "id": 140,
-      "label": "Repentir Coran Salman Découler",
-      "count": 14
-    },
-    {
-      "id": 172,
-      "label": "Chefferie Adolphe Uléma Faib",
-      "count": 14
-    },
-    {
-      "id": 227,
-      "label": "Blaise Compaoré Boureima Pays Faire Mogho Naaba",
-      "count": 14
-    },
-    {
-      "id": 234,
-      "label": "Chefferie Chefferie Traditionnel Dignitaire Intolérance Religieux",
-      "count": 14
-    },
-    {
-      "id": 269,
-      "label": "République Niger National Niger Insécurité Gouvernement Niger",
-      "count": 14
-    },
-    {
-      "id": 17,
-      "label": "Ouédraogo Burkinabè Pouvoir International Ouagadougou Ouagadougou",
-      "count": 13
-    },
-    {
-      "id": 40,
-      "label": "Falloir Faire Ibrahim Ousmane Imam Mosquée Musulman Célébrer",
-      "count": 13
-    },
-    {
-      "id": 51,
-      "label": "Afrique Ama Cataracte Iyali Ama",
-      "count": 13
-    },
-    {
-      "id": 57,
-      "label": "Ouedraogo Adoption Cfa Assainissement",
-      "count": 13
-    },
-    {
-      "id": 69,
-      "label": "Ibrahim Mouton Tabaski Fête Tabaski El Kebir",
-      "count": 13
-    },
-    {
-      "id": 146,
-      "label": "Kpalimé Bako Bélier Rpt",
-      "count": 13
-    },
-    {
-      "id": 170,
-      "label": "Association Islamique Clément Sawadogo Burkinabè Mecque Cnopm",
-      "count": 13
     },
     {
       "id": 201,
-      "label": "Ouédraogo Grand Imam Coutumier Mois Ramadan",
-      "count": 13
+      "label": "Hadj Diaby Moustapha - Moustapha Diaby - Supérieur Islamique - National Islamique Cni",
+      "count": 16
     },
     {
       "id": 211,
-      "label": "Islamique Cni Devoir Prier Hadj Fofana Prière Pouvoir",
-      "count": 13
+      "label": "Burkinabé - Fête Aïd Kebir - Bouaké - Fête Mouton",
+      "count": 16
     },
     {
-      "id": 216,
-      "label": "Islamique Lomé Togo Umt Central Lomé Conférence Presse",
-      "count": 13
-    },
-    {
-      "id": 219,
-      "label": "Hadj Mamadou Mamadou Coulibaly Imam Mosquée Mamadou",
-      "count": 13
-    },
-    {
-      "id": 252,
-      "label": "Devoir Jeûner Jeûner Mois Jour Jeûne Rupture Jeûne",
-      "count": 13
-    },
-    {
-      "id": 46,
-      "label": "Eyadéma Libye Président Eyadéma Tripoli",
-      "count": 12
-    },
-    {
-      "id": 53,
-      "label": "Paix Luire Dieu Bénir Cher Frère Abraham",
-      "count": 12
-    },
-    {
-      "id": 75,
-      "label": "Djougou Extrémisme Violent Extrémisme Borgou",
-      "count": 12
-    },
-    {
-      "id": 197,
-      "label": "Hadj Koné National Islamique Aeemci Musulman Faire",
-      "count": 12
-    },
-    {
-      "id": 222,
-      "label": "Savoir Faire Coran Jésus Bien Sûr",
-      "count": 12
-    },
-    {
-      "id": 240,
-      "label": "Formation Islamique Thème Islam Jeunesse Islamique Affaire Islamique",
-      "count": 12
+      "id": 237,
+      "label": "Étudiant Musulman Burkina - Musulman Burkina Aeemb - Musulman Burkina - Musulman Burkina Célébrer",
+      "count": 16
     },
     {
       "id": 244,
-      "label": "Aeemci Conférence Islamique Aeemt Jeunesse Islamique",
-      "count": 12
+      "label": "Pays Burkina Faso - Pays Burkina - Islam Côte Ivoire - Responsable Communauté Musulman",
+      "count": 16
     },
     {
-      "id": 254,
-      "label": "Effectuer Hadj Effectuer Pèlerinage Sacrer Pèlerin Devoir",
-      "count": 12
+      "id": 260,
+      "label": "Dioulasso - Fidèle Musulman - Souleymane Koné - Recherche Formation Islamique",
+      "count": 16
     },
     {
-      "id": 281,
-      "label": "Etat Faire Celer Pouvoir Faire Celer Niger Mali",
-      "count": 12
+      "id": 278,
+      "label": "Célébration Anniversaire - Baba - Ethiopian - Conférence Presse",
+      "count": 16
     },
     {
-      "id": 282,
-      "label": "Exhorter Fidèle Dialogue Interreligieux Musulman Célébrer Solennel",
-      "count": 12
-    },
-    {
-      "id": 284,
-      "label": "Ledit Mosquée Mésentente Ouémé Aid El",
-      "count": 12
-    },
-    {
-      "id": 300,
-      "label": "Dieu Vouloir Musulman Vouloir Mosquée Faire Cmbf",
-      "count": 12
-    },
-    {
-      "id": 304,
-      "label": "Blaise Compaoré Muezzin Coran Lune",
-      "count": 12
-    },
-    {
-      "id": 49,
-      "label": "Aid El Ilboudo Frère Soeur Bienfaisance",
-      "count": 11
-    },
-    {
-      "id": 120,
-      "label": "Imamat Imam Mosquée Ançar Cmbf",
-      "count": 11
-    },
-    {
-      "id": 180,
-      "label": "Afrique Ama Million Cfa Témoigner Gratitude Agoè",
-      "count": 11
-    },
-    {
-      "id": 239,
-      "label": "Ouédraogo Korhogo Ibrahim Ousmane Ministre Charge",
-      "count": 11
-    },
-    {
-      "id": 242,
-      "label": "Jeûner Jour Enseignement Prophète Prophète Mahomet Prophète Mouhammad",
-      "count": 11
-    },
-    {
-      "id": 291,
-      "label": "Imam Mosquée Ouédraogo Cmbf Semdé",
-      "count": 11
-    },
-    {
-      "id": 323,
-      "label": "Aeemb Niger Burkina Kadiogo Formation Islamique",
-      "count": 11
-    },
-    {
-      "id": 37,
-      "label": "Dignitaire Cotonou Endogène Dénombrer",
-      "count": 10
-    },
-    {
-      "id": 41,
-      "label": "Milliard Cfa Franc Cfa Fonds Saoudien Zul Kifl",
-      "count": 10
-    },
-    {
-      "id": 52,
-      "label": "Djihadiste Diallo Abattre Etat Major",
-      "count": 10
-    },
-    {
-      "id": 118,
-      "label": "Inoussa Bouraïma Saïdou Togo El Lomé El",
-      "count": 10
-    },
-    {
-      "id": 139,
-      "label": "Mecque Accomplir Accomplir Rite Mecque Pèlerin Islamique Cni",
-      "count": 10
-    },
-    {
-      "id": 145,
-      "label": "Imam Grand Faso Célébrer Ablassé Allah Accorder",
-      "count": 10
-    },
-    {
-      "id": 153,
-      "label": "Action Grâce Prière Musulman Présence Préfet Eternel",
-      "count": 10
-    },
-    {
-      "id": 162,
-      "label": "Félix Houphouët Diaby Moustapha Diaby Koweït Faire Falloir",
-      "count": 10
-    },
-    {
-      "id": 176,
-      "label": "Diaby Moustapha Diaby Koweït Faire Celer Joseph",
-      "count": 10
-    },
-    {
-      "id": 195,
-      "label": "Hadj Devoir Pouvoir Effectuer Coût Hadj Détracteur",
-      "count": 10
-    },
-    {
-      "id": 206,
-      "label": "Etat Pouvoir Haut Dignitaire Dignitaire Bénin Faire",
-      "count": 10
-    },
-    {
-      "id": 246,
-      "label": "Siaka Sanou Ilboudo Scolariser Action Social",
-      "count": 10
-    },
-    {
-      "id": 249,
-      "label": "Ivoire Célébrer Coran Istanbul Grand Événement",
-      "count": 10
-    },
-    {
-      "id": 258,
-      "label": "Coutumier Musulman Faire Interreligieux Démé",
-      "count": 10
-    },
-    {
-      "id": 48,
-      "label": "Laurent Gbagbo Dignitaire Plaider Cni",
-      "count": 9
-    },
-    {
-      "id": 111,
-      "label": "Extrémisme Violent Extrémisme Assoli Instaurer",
-      "count": 9
-    },
-    {
-      "id": 132,
-      "label": "Dignitaire Congrès Ordinaire Cotonou Zou",
-      "count": 9
+      "id": 335,
+      "label": "Mali Burkina Faso - Mali Burkina - Sénégal Mali - Imam Cissé Djiguiba",
+      "count": 16
     },
     {
       "id": 184,
-      "label": "Inoussa Bouraïma Etat Faure Lomé El Imam Grand",
+      "label": "Aboubakar - Allah Akbar - Imam Ousmane - Communauté Musulman Bénin",
+      "count": 15
+    },
+    {
+      "id": 281,
+      "label": "Calendrier Islamique - Association Islamique Niger - Aboubacar - An Musulman",
+      "count": 15
+    },
+    {
+      "id": 286,
+      "label": "National Islamique Cni - Supérieur Imam Cosim - Conseil National Islamique - National Islamique",
+      "count": 15
+    },
+    {
+      "id": 293,
+      "label": "Général Brigade Abdourahamane - Brigade Abdourahamane Tiani - Abdourahamane Tiani - Mohamed Bazoum",
+      "count": 15
+    },
+    {
+      "id": 322,
+      "label": "Gouvernement Burkinabè - Abdoul Karim - Musulman Bobo Dioulasso - Bobo Dioulasso",
+      "count": 15
+    },
+    {
+      "id": 342,
+      "label": "Confédération - Etat Sahel - Islam Religion - Liberté Conscience",
+      "count": 15
+    },
+    {
+      "id": 122,
+      "label": "Saoudite Burkina Faso - Burkina Faso - Arabie Saoudite Burkina - Ouagadougou",
+      "count": 14
+    },
+    {
+      "id": 213,
+      "label": "Oecuménique - Paix Islam - Hadj Ibrahim - Septentrional",
+      "count": 14
+    },
+    {
+      "id": 292,
+      "label": "Musulman Côte Ivoire - Demande Musulman - Intellectuel Musulman - Culturel Musulman",
+      "count": 14
+    },
+    {
+      "id": 177,
+      "label": "Ladji Sidibé - Doumbia - Ibrahima - Sidibé",
+      "count": 13
+    },
+    {
+      "id": 192,
+      "label": "Capitale Burkinabè - Burkina Faso - Burkinabè - National Burkina",
+      "count": 13
+    },
+    {
+      "id": 200,
+      "label": "Islamique Côte Ivoire - Côte Ivoire - Aboubakar Fofana - Aboubakar",
+      "count": 13
+    },
+    {
+      "id": 209,
+      "label": "République Islamique - Ville Niamey - République Islamique Iran - Niamey Niger",
+      "count": 13
+    },
+    {
+      "id": 236,
+      "label": "Fête Aïd Kébir - Communauté Musulman Togo - Aïd Kébir Fête - Kébir Fête",
+      "count": 13
+    },
+    {
+      "id": 288,
+      "label": "Yamoussoukro - Interministériel - Hadj Diaby - Pèlerin Ivoirien",
+      "count": 13
+    },
+    {
+      "id": 295,
+      "label": "Union Musulman Togo - Communauté Musulman - Aboubakar - Union Musulman",
+      "count": 13
+    },
+    {
+      "id": 306,
+      "label": "Société Islamique - Conférence Islamique - Organisation Coopération Islamique - Coopération Islamique",
+      "count": 13
+    },
+    {
+      "id": 309,
+      "label": "At Islamique - Communauté Islamique - Saint Coran - At Islamique Ahmadiyya",
+      "count": 13
+    },
+    {
+      "id": 313,
+      "label": "Prière Fidèle Musulman - Fidèle Musulman - Implorer Allah - Grand Prière",
+      "count": 13
+    },
+    {
+      "id": 324,
+      "label": "Général Armée Gnassingbé - Armée Gnassingbé Eyadéma - Alassane - Hadj Alassane",
+      "count": 13
+    },
+    {
+      "id": 331,
+      "label": "Koudouss Koné Cni - Idriss Koudouss Koné - National Islamique Cni - Imam Idriss Koudouss",
+      "count": 13
+    },
+    {
+      "id": 336,
+      "label": "Islam Burkina - Calendrier Islamique - An Musulman - Burkina",
+      "count": 13
+    },
+    {
+      "id": 339,
+      "label": "Grand Fête Musulman - Intense Prière - Séance Prière - Règle Islam",
+      "count": 13
+    },
+    {
+      "id": 174,
+      "label": "Autorité Burkinabè - Burkinabè - Burkina Faso - Ouagadougou",
+      "count": 12
+    },
+    {
+      "id": 226,
+      "label": "Hadj Boubacar - Travail Bien Faire - Tradition Musulman - Mohammad",
+      "count": 12
+    },
+    {
+      "id": 280,
+      "label": "Texte Islamique - Plupart Musulman - Société Ivoirien - Musulman Mosquée",
+      "count": 12
+    },
+    {
+      "id": 291,
+      "label": "Musulman Burkinabè - Burkinabè - Burkina Faso - Femme Musulman",
+      "count": 12
+    },
+    {
+      "id": 305,
+      "label": "Hadj Mamadou - Mamadou - Dernier Imam - Jeudi Février",
+      "count": 12
+    },
+    {
+      "id": 311,
+      "label": "Musulman Burkina Faso - Fête Musulman - Mahmood Nasir - Protéger Burkina Faso",
+      "count": 12
+    },
+    {
+      "id": 329,
+      "label": "Koudouss Koné - Koudouss Conseil National - Imam Koudouss - National Islamique Cni",
+      "count": 12
+    },
+    {
+      "id": 334,
+      "label": "Cadre Musulman - Culturel Islamique - Imam Aboubacar - Faire Islam",
+      "count": 12
+    },
+    {
+      "id": 202,
+      "label": "Aboudou - Convoyage Pèlerin - Mercredi Février - Accueil Pèlerin",
+      "count": 11
+    },
+    {
+      "id": 269,
+      "label": "Union Islamique Bénin - Important Communauté Musulman - Union Islamique - Permettre Communauté Musulman",
+      "count": 11
+    },
+    {
+      "id": 317,
+      "label": "Association Islamique Burkina - Islamique Burkina Faib - Islamique Burkina - Bobo Dioulasso",
+      "count": 11
+    },
+    {
+      "id": 319,
+      "label": "Développement Burkina Faso - Développement Burkina - Burkina Faso - Burkina",
+      "count": 11
+    },
+    {
+      "id": 328,
+      "label": "Pèlerin Burkinabè - Burkinabè - Burkina Faso - Burkinabé",
+      "count": 11
+    },
+    {
+      "id": 330,
+      "label": "Aboudou - Défavorisé - Royaume Arabie Saoudite - Hier Mardi",
+      "count": 11
+    },
+    {
+      "id": 133,
+      "label": "Gnassingbé Eyadèma - Essozimna Gnassingbé - Faure Essozimna Gnassingbé - Eyadèma",
+      "count": 10
+    },
+    {
+      "id": 215,
+      "label": "Burkinabè - Université Ouagadougou - Représentant Communauté Musulman - Cupidité",
+      "count": 10
+    },
+    {
+      "id": 284,
+      "label": "Religieux Burkina Faso - Gouvernement Burkina Faso - Religieux Burkina - Burkinabè",
+      "count": 10
+    },
+    {
+      "id": 285,
+      "label": "Supérieur Islamique Csi - Koudouss Koné - National Islamique Cni - Conseil Supérieur Islamique",
+      "count": 10
+    },
+    {
+      "id": 290,
+      "label": "Musulman Burkina Aeemb - Musulman Burkina - Étudiant Musulman Burkina - Burkina Aeemb",
+      "count": 10
+    },
+    {
+      "id": 315,
+      "label": "Salifou - Naissance Prophète Mahomet - Marquer Célébration - Hadj Idrissou",
+      "count": 10
+    },
+    {
+      "id": 337,
+      "label": "Organisation Société Civil - Leader Religieux - Objectif Développement Durable - Montant Fcfa",
+      "count": 10
+    },
+    {
+      "id": 156,
+      "label": "Hamadou - Fatouma - Fcfa Fcfa - Somme Fcfa",
       "count": 9
     },
     {
-      "id": 190,
-      "label": "Chefferie Traditionnel Dialogue Interreligieux Interreligieux Instaurer",
+      "id": 240,
+      "label": "Hadj Diaby Moustapha - Cadjèhoun - Supérieur Islamique - Conseil Supérieur Islamique",
       "count": 9
     },
     {
       "id": 253,
-      "label": "Pilier Islam Prophète Mahomet Mohamed Coran",
+      "label": "Présidence Faso - Hadj Oumarou Kanazoé - Faso Roch Marc - Hadj Oumarou",
       "count": 9
     },
     {
-      "id": 295,
-      "label": "Imam Faire Allah Grand Exaucer Kpalimé",
+      "id": 297,
+      "label": "Organisation Conférence Islamique - Communauté Musulman Pays - Membre Organisation Conférence - Conférence Islamique",
       "count": 9
     },
     {
-      "id": 308,
-      "label": "Alassane Ouattara Amadou Sortie Crise Enseignement Technique",
+      "id": 299,
+      "label": "Organisation Société Civil - Boni Yayi - Dignitaire Religion - Représentant Confession Religieux",
       "count": 9
     },
     {
-      "id": 313,
-      "label": "Lapidation Prophète Mouhammad Dieu Luire Mouhammad",
+      "id": 314,
+      "label": "Association Islamique Burkina - Islamique Burkina Faib - Islamique Burkina - Burkinabè",
       "count": 9
     },
     {
-      "id": 12,
-      "label": "Coran Révéler Recueillement Coran Gabriel",
+      "id": 219,
+      "label": "Dernier Ouagadougou - Prophète Mohamed - Hamadi Baro - An Musulman",
       "count": 8
-    },
-    {
-      "id": 61,
-      "label": "Islamique Niger Musulman Niger Issoufou Mahamadou Ouhoumoudou Mahamadou",
-      "count": 8
-    },
-    {
-      "id": 68,
-      "label": "Banque Islamique Gouvernement Niger Renforcement Capacité Issaka",
-      "count": 8
-    },
-    {
-      "id": 96,
-      "label": "Réitérer Bako Rafini Cfa",
-      "count": 8
-    },
-    {
-      "id": 105,
-      "label": "Celer Passer Enseignement Islamique Tahirou Initier",
-      "count": 8
-    },
-    {
-      "id": 138,
-      "label": "Peuple Frère Cher Frère Cotonou Libye",
-      "count": 8
-    },
-    {
-      "id": 143,
-      "label": "Dieu Luire Jésus Prophète Mouhammad Adultère",
-      "count": 8
-    },
-    {
-      "id": 152,
-      "label": "Chefferie Dabiré Nom Dieu Dialogue Interreligieux",
-      "count": 8
-    },
-    {
-      "id": 155,
-      "label": "Nigeria Peuple Frère Sénégal Cher Frère",
-      "count": 8
-    },
-    {
-      "id": 188,
-      "label": "Djougou Dialogue Interreligieux Ahmadiyya Bénin At Islamique",
-      "count": 8
-    },
-    {
-      "id": 189,
-      "label": "Paix Dieu Entier Célébrer Assemblée Dieu Ténèbre",
-      "count": 8
-    },
-    {
-      "id": 191,
-      "label": "Meilleur Condition Organisation Hadj Convoquer Candidat Pèlerinage",
-      "count": 8
-    },
-    {
-      "id": 196,
-      "label": "Blaise Compaoré Ouedraogo Religieux Coutumier Enrôlement",
-      "count": 8
-    },
-    {
-      "id": 208,
-      "label": "Sidi Mohamed Musulman Islam Aeemb Hadj Moussa",
-      "count": 8
-    },
-    {
-      "id": 214,
-      "label": "Imam Mosquée Sidi Mohamed Imam El Sermon Imam",
-      "count": 8
-    },
-    {
-      "id": 224,
-      "label": "Aeemci Solennel Aller Permettre Prophète Mohammad",
-      "count": 8
-    },
-    {
-      "id": 235,
-      "label": "Jamahiriya Présider Cérémonie Cotonou Jamahiriya Arabe",
-      "count": 8
-    },
-    {
-      "id": 294,
-      "label": "Celer Faire Khalife Musulman Faire Ilboudo",
-      "count": 8
-    },
-    {
-      "id": 22,
-      "label": "Blaise Compaoré Islamique Oci Coopération Islamique Oci",
-      "count": 7
-    },
-    {
-      "id": 24,
-      "label": "Etat Faure Officiant Prière Diriger Musulman Togo",
-      "count": 7
-    },
-    {
-      "id": 25,
-      "label": "Thème Islam Prophète Mohammad Femme Islam Abdoul",
-      "count": 7
-    },
-    {
-      "id": 26,
-      "label": "Abdoulaye Burkina Faso Alibori Benin",
-      "count": 7
-    },
-    {
-      "id": 28,
-      "label": "Imam Mosquée Diriger Imam Présence Préfet Prier Dieu",
-      "count": 7
-    },
-    {
-      "id": 70,
-      "label": "Blaise Compaoré Yaméogo Coutumier Ouro",
-      "count": 7
-    },
-    {
-      "id": 76,
-      "label": "Dignitaire Religieux Impérieux Président Faso Dignitaire",
-      "count": 7
-    },
-    {
-      "id": 77,
-      "label": "Ouédraogo Sénégal Ouagadougou Mecque",
-      "count": 7
-    },
-    {
-      "id": 80,
-      "label": "Ouédraogo Ouagadougou Devoir Pouvoir Burkina Faso",
-      "count": 7
-    },
-    {
-      "id": 86,
-      "label": "Tabaski Célébrer Prélude Occasion Célébration Aïd El",
-      "count": 7
-    },
-    {
-      "id": 95,
-      "label": "Barro Bank Coris Baro",
-      "count": 7
-    },
-    {
-      "id": 102,
-      "label": "Etat Major Istanbul Fd Soutien Islam",
-      "count": 7
-    },
-    {
-      "id": 109,
-      "label": "Etat Charger Ousmane Cotonou Bank",
-      "count": 7
-    },
-    {
-      "id": 129,
-      "label": "Diaby Moustapha Aeemci Ivoirité Supérieur Islamique",
-      "count": 7
-    },
-    {
-      "id": 149,
-      "label": "Ouédraogo Ablassé Ouédraogo Ouagadougou Ablassé",
-      "count": 7
-    },
-    {
-      "id": 182,
-      "label": "Sénégal Émir Boni Sabah",
-      "count": 7
-    },
-    {
-      "id": 204,
-      "label": "Ouagadougou Tiendrébéogo Luc Adolphe Adolphe Tiao",
-      "count": 7
-    },
-    {
-      "id": 207,
-      "label": "Exaucer Prière Coutumier Exaucer Allah Permettre",
-      "count": 7
-    },
-    {
-      "id": 283,
-      "label": "Etat Islamique Bien Faire Mahamadou Sauvegarde Patrie",
-      "count": 7
-    },
-    {
-      "id": 19,
-      "label": "Repentir Attécoubé Traoré Rdr",
-      "count": 6
-    },
-    {
-      "id": 33,
-      "label": "Koweït Eyadéma Président Faure Président Eyadéma",
-      "count": 6
-    },
-    {
-      "id": 50,
-      "label": "Jeûner Coran Aumône Médisance",
-      "count": 6
-    },
-    {
-      "id": 72,
-      "label": "Jeûner Lune Allaiter Acquitter",
-      "count": 6
-    },
-    {
-      "id": 98,
-      "label": "Fonds Saoudien Président République Milliard Franc Koweïtien",
-      "count": 6
-    },
-    {
-      "id": 100,
-      "label": "Coutumier Autorité Coutumier Soumahoro Boga Doudou",
-      "count": 6
-    },
-    {
-      "id": 106,
-      "label": "Obédience Dignitaire Interreligieux Cotonou",
-      "count": 6
-    },
-    {
-      "id": 110,
-      "label": "Convoyage Bako Mecque Agréer",
-      "count": 6
-    },
-    {
-      "id": 126,
-      "label": "Sidi Mlle Charles Touré",
-      "count": 6
-    },
-    {
-      "id": 142,
-      "label": "Faire Respecter Bélier Affluence Cfa",
-      "count": 6
-    },
-    {
-      "id": 175,
-      "label": "Président Faso Coutumier Religieux Coutumier Ousmane",
-      "count": 6
-    },
-    {
-      "id": 231,
-      "label": "Devoir Permettre Mosquée Faire Dignitaire Million Cfa",
-      "count": 6
-    },
-    {
-      "id": 233,
-      "label": "Coran Salut Luire Égorger Adama Sakandé",
-      "count": 6
     },
     {
       "id": 251,
-      "label": "Mois Bénir Musulman Devoir Femme Musulman Grâce Dieu",
+      "label": "Seini Seydou - Pays Musulman - Prophète Mohamed Psl - Naissance Prophète Mohamed",
+      "count": 8
+    },
+    {
+      "id": 277,
+      "label": "Soutien Communauté Musulman - Lieu Prière - Prière Musulman - Aller Contribuer",
+      "count": 8
+    },
+    {
+      "id": 308,
+      "label": "Organisation Conférence Islamique - Burkina Faso Faire - Conférence Islamique - Membre Organisation Conférence",
+      "count": 8
+    },
+    {
+      "id": 326,
+      "label": "Yaméogo - Centre Ouest - Faire Déclaration - Bassolé",
+      "count": 8
+    },
+    {
+      "id": 241,
+      "label": "Islamique Burkina Faso - Islamique Burkina - Arabie Saoudite Pèlerin - Arabie Saoudite",
+      "count": 7
+    },
+    {
+      "id": 250,
+      "label": "Autorité Burkinabè - Saoudite Burkina Faso - Peuple Burkinabè - Burkinabè",
+      "count": 7
+    },
+    {
+      "id": 301,
+      "label": "Association Islamique - Conseil Islamique - Pèlerinage Musulman - Communauté Musulman",
+      "count": 7
+    },
+    {
+      "id": 341,
+      "label": "Endroit Communauté Musulman - Alassane - Fidèle Musulman - Place Idi Akpakpa",
       "count": 6
-    },
-    {
-      "id": 276,
-      "label": "Continuer Faire Nuit Jour Sékou Entrainer",
-      "count": 6
-    },
-    {
-      "id": 279,
-      "label": "Burkina Faso Abdoulaye Dioulasso Musulman Burkina",
-      "count": 6
-    },
-    {
-      "id": 287,
-      "label": "Ramatoulaye Jeunesse Islamique Culture Islamique Mohammed",
-      "count": 6
-    },
-    {
-      "id": 310,
-      "label": "Dernier Moment Affréter Convoyage Préparatif",
-      "count": 6
-    },
-    {
-      "id": 30,
-      "label": "Coutumier Religion Traditionnel Pélérinage Ancêtre",
-      "count": 5
-    },
-    {
-      "id": 31,
-      "label": "Cerfi Aeemb Aeemb Cerfi Aeemb Imam Tiégo",
-      "count": 5
-    },
-    {
-      "id": 62,
-      "label": "Formation Islamique Vie Musulman Lecture Coran Coran",
-      "count": 5
-    },
-    {
-      "id": 83,
-      "label": "Penser Falloir Falloir Faire Celer Togo",
-      "count": 5
-    },
-    {
-      "id": 130,
-      "label": "Mali Niger Coran Hadj Cissé Imprégner",
-      "count": 5
-    },
-    {
-      "id": 154,
-      "label": "Franc Cfa Lomé El Coran Sokodé",
-      "count": 5
-    },
-    {
-      "id": 156,
-      "label": "Kpalimé Travail Faire Ong Entrer Togo",
-      "count": 5
-    },
-    {
-      "id": 161,
-      "label": "Etat Islamique Niger Burkina Nigeria Travail Faire",
-      "count": 5
-    },
-    {
-      "id": 177,
-      "label": "Sénégal Aid El El Kebir Kebir",
-      "count": 5
-    },
-    {
-      "id": 192,
-      "label": "Ouedraogo Cosim Cni Pouvoir Accomplir Burkinabè",
-      "count": 5
-    },
-    {
-      "id": 210,
-      "label": "Hadj Devoir Islamique Burkina Ouagadougou Décentralisation",
-      "count": 5
-    },
-    {
-      "id": 232,
-      "label": "Hadj Inoussa Foi Islamique Inoussa Bouraïma Promotion Islam",
-      "count": 5
-    },
-    {
-      "id": 243,
-      "label": "Émouvoir Mois Sacrer Frère Soeur Mirza",
-      "count": 5
-    },
-    {
-      "id": 247,
-      "label": "Politique Devoir Dieu Pouvoir Insécurité Gouvernant",
-      "count": 5
-    },
-    {
-      "id": 259,
-      "label": "Musulman Niger Islamique Niger Nuit Bénir Mahamadou",
-      "count": 5
-    },
-    {
-      "id": 265,
-      "label": "Formation Islamique Femme Musulman Fille Musulman Musulman Togo",
-      "count": 5
-    },
-    {
-      "id": 306,
-      "label": "Ouédraogo Ablassé Ablassé Ouédraogo Penser Falloir",
-      "count": 5
     }
   ],
   "ai_fields": [
